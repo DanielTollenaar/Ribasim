@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.550">
+<meta name="generator" content="quarto-1.5.55">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Ribasim - Model concept</title>
+<title>Model concept – Ribasim</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -92,7 +92,7 @@ div.csl-indent {
 <script src="../site_libs/quarto-diagram/mermaid-init.js"></script>
 <link href="../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <script type="text/javascript">
@@ -140,7 +140,7 @@ window.Quarto = {
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -178,17 +178,17 @@ window.Quarto = {
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
-          <div class="quarto-navbar-tools">
+            <div class="quarto-navbar-tools">
 </div>
       </div> <!-- /container-fluid -->
     </nav>
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
         <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../concept/modelconcept.html">Numerics</a></li><li class="breadcrumb-item"><a href="../concept/modelconcept.html">Model concept</a></li></ol></nav>
-        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
   </nav>
@@ -213,9 +213,9 @@ window.Quarto = {
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
  <span class="menu-text">Numerics</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -242,9 +242,9 @@ window.Quarto = {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
  <span class="menu-text">Implementation</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -319,9 +319,9 @@ window.Quarto = {
 <p><span class="math display">\[
 \frac{\mathrm{d}S}{\mathrm{d}t} = Q_{in} - Q_{out}
 \]</span></p>
-<p>We can split out the fluxes into separate terms, such as precipitation <span class="math inline">\(P\)</span>, evapotranspiration <span class="math inline">\(ET\)</span> and runoff <span class="math inline">\(R\)</span>. For now other fluxes are combined into <span class="math inline">\(Q_{rest}\)</span>. If we define all fluxes entering our reservoir as positive, and those leaving the system as negative, all fluxes can be summed up.</p>
+<p>We can split out the fluxes into separate terms, such as precipitation <span class="math inline">\(P\)</span> and evapotranspiration <span class="math inline">\(ET\)</span>. For now other fluxes are combined into <span class="math inline">\(Q_{rest}\)</span>. If we define all fluxes entering our reservoir as positive, and those leaving the system as negative, all fluxes can be summed up.</p>
 <p><span class="math display">\[
-\frac{\mathrm{d}S}{\mathrm{d}t} = R + P + ET + Q_{rest}
+\frac{\mathrm{d}S}{\mathrm{d}t} = P + ET + Q_{rest}
 \]</span></p>
 </section>
 <section id="time" class="level2" data-number="1.2">
@@ -358,7 +358,7 @@ window.Quarto = {
 </div>
 <p>Internally a directed graph is used. The direction is defined to be the positive flow direction, and is generally set in the dominant flow direction. The basins are the nodes of the network graph. Basin states and properties such storage volume and wetted area are associated with the nodes (A, B, C, D), as are most forcing data such as precipitation, evaporation, or water demand. Basin connection properties and interbasin flows are associated with the edges (the lines between A, B, C, and D) instead.</p>
 <p>Multiple basins may exist within the same spatial polygon, representing different aspects of the surface water system (perennial ditches, ephemeral ditches, or even surface ponding). <a href="#fig-p" class="quarto-xref">Figure&nbsp;1</a>, <a href="#fig-s" class="quarto-xref">Figure&nbsp;2</a>, <a href="#fig-t" class="quarto-xref">Figure&nbsp;3</a> show the 25.0 m rasterized primary, secondary, and tertiary surface waters as identified by BRT TOP10NL <span class="citation" data-cites="pdoktopnl">(<a href="#ref-pdoktopnl" role="doc-biblioref">PDOK 2022</a>)</span> in the Hupsel basin. These systems may represented in multiple ways.</p>
-<div id="fig-p" class="quarto-figure quarto-figure-center quarto-float anchored">
+<div id="fig-p" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-p-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="https://user-images.githubusercontent.com/13662783/187625163-d0a81bb6-7f55-4ad1-83e2-90ec1ee79740.PNG" class="img-fluid figure-img">
@@ -368,7 +368,7 @@ Figure&nbsp;1: Hupsel: primary surface water.
 </figcaption>
 </figure>
 </div>
-<div id="fig-s" class="quarto-figure quarto-figure-center quarto-float anchored">
+<div id="fig-s" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-s-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="https://user-images.githubusercontent.com/13662783/187625170-1acdfb41-7077-443f-b140-ae18cbf21e53.PNG" class="img-fluid figure-img">
@@ -378,7 +378,7 @@ Figure&nbsp;2: Hupsel: secondary surface water.
 </figcaption>
 </figure>
 </div>
-<div id="fig-t" class="quarto-figure quarto-figure-center quarto-float anchored">
+<div id="fig-t" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-t-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="https://user-images.githubusercontent.com/13662783/187625174-3eec28b5-ddbb-4870-94c3-d9e9a43f8eb4.PNG" class="img-fluid figure-img">
@@ -422,16 +422,15 @@ Figure&nbsp;3: Hupsel: tertiary surface water.
 </section>
 <section id="structures-in-a-water-system" class="level2" data-number="1.4">
 <h2 data-number="1.4" class="anchored" data-anchor-id="structures-in-a-water-system"><span class="header-section-number">1.4</span> Structures in a water system</h2>
-<p>In addition to free flowing waterbodies, a watersystem typically has structures to control the flow of water. Ribasim uses connector nodes which simplify the hydraulic behaviour for the free flowing conditions or structures. The following type of connector nodes are available for this purpose:</p>
+<p>In addition to free flowing waterbodies, a watersystem typically has structures to control the flow of water. Ribasim uses connector nodes which simplify the hydraulic behavior for the free flowing conditions or structures. The following type of connector nodes are available for this purpose:</p>
 <ul>
 <li><a href="../reference/node/tabulated-rating-curve.html">TabulatedRatingCurve</a>: one-directional flow based on upstream head. Node type typically used for gravity flow conditions either free flowing open water channels or over a fixed structure.</li>
 <li><a href="../reference/node/linear-resistance.html">LinearResistance</a>: bi-directional flow based on head difference and linear resistance. Node type typically used for bi-directional flow situations or situations where head difference over a structure determines its actual flow capacity.</li>
 <li><a href="../reference/node/manning-resistance.html">ManningResistance</a>: bi-directional flow based on head difference and resistance using Manning-Gauckler formula. Same usage as LinearResistance, providing a better hydrological meaning to the resistance parameterization.</li>
 <li><a href="../reference/node/pump.html">Pump</a>: one-directional structure with a set flow rate. Node type typically used in combination with control to force water over the edge.</li>
 <li><a href="../reference/node/outlet.html">Outlet</a>: one-directional gravity structure with a set flow rate. Node type typically used in combination with control to force water over the edge, even if their is a mismatch in actual hydraulic capacity. The node type has an automated mechanism to stop the flow when the head difference is zero.</li>
-<li><a href="../reference/node/fractional-flow.html">FractionalFlow</a>: to split an outflow over multiple edges based on a flow fraction. Node type is typically used for diversions or bifurcations with a known and fixed ratio.</li>
 </ul>
-<p>The control layer can activate or deactivate nodes, set flow rates for the Pump and Outlet, or choose different parameterizations for TabulatedRatingCurve, LinearResistance, ManningResistance or FractionalFlow.</p>
+<p>The control layer can activate or deactivate nodes, set flow rates for the Pump and Outlet, or choose different parameterizations for TabulatedRatingCurve, LinearResistance or ManningResistance.</p>
 <p>Connector nodes are required within a Ribasim network to determine the flow exchange between basins.</p>
 
 
@@ -485,18 +484,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -528,7 +516,47 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
@@ -563,7 +591,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
     });
   }
   const xrefs = window.document.querySelectorAll('a.quarto-xref');

@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.550">
+<meta name="generator" content="quarto-1.5.55">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Ribasim - Release process</title>
+<title>Release process – Ribasim</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -33,7 +33,7 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
   { counter-reset: source-line 0; }
@@ -121,7 +121,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -159,17 +159,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
-          <div class="quarto-navbar-tools">
+            <div class="quarto-navbar-tools">
 </div>
       </div> <!-- /container-fluid -->
     </nav>
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
         <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../dev/release.html">Release process</a></li></ol></nav>
-        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
   </nav>
@@ -194,6 +194,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../dev/benchmark.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Benchmark</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../dev/addnode.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Adding node types</span></a>
   </div>
@@ -208,6 +214,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <div class="sidebar-item-container"> 
   <a href="../dev/qgis.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">QGIS plugin development</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../dev/allocation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Allocation</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -243,10 +255,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul class="collapse">
   <li><a href="#pre-release-checks" id="toc-pre-release-checks" class="nav-link" data-scroll-target="#pre-release-checks"><span class="header-section-number">2.1</span> Pre-release checks</a></li>
   <li><a href="#update-version-numbers-of-the-components" id="toc-update-version-numbers-of-the-components" class="nav-link" data-scroll-target="#update-version-numbers-of-the-components"><span class="header-section-number">2.2</span> Update version numbers of the components</a></li>
-  <li><a href="#create-a-new-release" id="toc-create-a-new-release" class="nav-link" data-scroll-target="#create-a-new-release"><span class="header-section-number">2.3</span> Create a new release</a></li>
-  <li><a href="#release-the-ribasim-python-packages-to-pypi" id="toc-release-the-ribasim-python-packages-to-pypi" class="nav-link" data-scroll-target="#release-the-ribasim-python-packages-to-pypi"><span class="header-section-number">2.4</span> Release the Ribasim Python packages to PyPI</a></li>
-  <li><a href="#do-manual-checks" id="toc-do-manual-checks" class="nav-link" data-scroll-target="#do-manual-checks"><span class="header-section-number">2.5</span> Do manual checks</a></li>
-  <li><a href="#announce-release" id="toc-announce-release" class="nav-link" data-scroll-target="#announce-release"><span class="header-section-number">2.6</span> Announce release</a></li>
+  <li><a href="#update-the-changelog" id="toc-update-the-changelog" class="nav-link" data-scroll-target="#update-the-changelog"><span class="header-section-number">2.3</span> Update the changelog</a></li>
+  <li><a href="#submit-a-pull-request" id="toc-submit-a-pull-request" class="nav-link" data-scroll-target="#submit-a-pull-request"><span class="header-section-number">2.4</span> Submit a pull request</a></li>
+  <li><a href="#create-a-new-release" id="toc-create-a-new-release" class="nav-link" data-scroll-target="#create-a-new-release"><span class="header-section-number">2.5</span> Create a new release</a></li>
+  <li><a href="#release-the-ribasim-python-packages-to-pypi" id="toc-release-the-ribasim-python-packages-to-pypi" class="nav-link" data-scroll-target="#release-the-ribasim-python-packages-to-pypi"><span class="header-section-number">2.6</span> Release the Ribasim Python packages to PyPI</a></li>
+  <li><a href="#do-manual-checks" id="toc-do-manual-checks" class="nav-link" data-scroll-target="#do-manual-checks"><span class="header-section-number">2.7</span> Do manual checks</a></li>
+  <li><a href="#announce-release" id="toc-announce-release" class="nav-link" data-scroll-target="#announce-release"><span class="header-section-number">2.8</span> Announce release</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -276,7 +290,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="what-is-a-release" class="level1" data-number="1">
 <h1 data-number="1"><span class="header-section-number">1</span> What is a release</h1>
 <p>The <a href="https://github.com/Deltares/Ribasim">Ribasim repository</a> contains several components, e.g., the Julia core, the Python tooling and QGIS plugin. The components are currently only guaranteed to work together if they have the same version number. Therefore we release Ribasim as a collection of all the components at once, all carrying the same version number. For maximum interoperability it is suggested to only release all components together, and not individually.</p>
-<p>For these releases we use <a href="https://calver.org/">Calender Versioning</a>, which makes it clear in which month the release was made.</p>
 </section>
 <section id="release-steps" class="level1" data-number="2">
 <h1 data-number="2"><span class="header-section-number">2</span> Release steps</h1>
@@ -288,18 +301,26 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="update-version-numbers-of-the-components" class="level2" data-number="2.2">
 <h2 data-number="2.2" class="anchored" data-anchor-id="update-version-numbers-of-the-components"><span class="header-section-number">2.2</span> Update version numbers of the components</h2>
 <p>Determine the new version number like <code>2023.1.0</code>, filling in the current year, a bumped <code>MINOR</code> number for normal releases and a bumped <code>MICRO</code> number for non-breaking, hotfix releases. This follows <code>YYYY.MINOR.MICRO</code> from <a href="https://calver.org/">calver</a>.</p>
-<p>Update the version numbers in the repository to the new version number. A single find and replace can update all locations. The Ribasim version number is not in <code>pixi.lock</code>, that file does not need updating.</p>
-<p>Now submit a pull request to update the version numbers.</p>
+<p>Create a branch that starts with <code>release</code>, like <code>release-2023-1.0</code>. It needs to start with <code>release</code> to trigger extra TeamCity checks.</p>
+<p>Update the version numbers in the repository to the new version number. See also the <a href="https://github.com/Deltares/Ribasim/releases/latest">latest Ribasim release</a>. Use find and replace to update all locations. Only update the lines in <code>pixi.lock</code> that refer to Ribasim packages, to avoid accidentally changing the version number of dependencies that happen to have the same version number. Don’t change the old version numbers in <code>changelog.qmd</code>.</p>
 </section>
-<section id="create-a-new-release" class="level2" data-number="2.3">
-<h2 data-number="2.3" class="anchored" data-anchor-id="create-a-new-release"><span class="header-section-number">2.3</span> Create a new release</h2>
+<section id="update-the-changelog" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="update-the-changelog"><span class="header-section-number">2.3</span> Update the changelog</h2>
+<p>The <code>docs/changelog.qmd</code> file, hosted on https://deltares.github.io/Ribasim/changelog, records the most important changes for users. Review the commits since the <a href="https://github.com/Deltares/Ribasim/releases/latest">latest Ribasim release</a> to make sure these are listed. Change the “Unreleased” section to the new version number and date, and create a new empty “Unreleased” section at the top.</p>
+</section>
+<section id="submit-a-pull-request" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="submit-a-pull-request"><span class="header-section-number">2.4</span> Submit a pull request</h2>
+<p>Now submit a pull request with the updated the version numbers and changelog.</p>
+</section>
+<section id="create-a-new-release" class="level2" data-number="2.5">
+<h2 data-number="2.5" class="anchored" data-anchor-id="create-a-new-release"><span class="header-section-number">2.5</span> Create a new release</h2>
 <p>When the pull request is merged to main, checkout the commit that updates the version numbers.</p>
 <p>Create a new tag, which is the letter <code>v</code> followed by the version number, like, <code>v2023.8.0</code>.</p>
 <p>This can be done by executing:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> tag <span class="op">&lt;</span>tagname<span class="op">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Then push the tags:</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push <span class="at">--tags</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>This will trigger a workflow on TeamCity that will publish a new release on GitHub as soon as it is finished. You can follow the progress <a href="https://dpcbuild.deltares.nl/buildConfiguration/Ribasim_Ribasim_MakeGitHubRelease?mode=builds">here</a>. It also auto-generates a changelog. You’ll probably want to curate that by rearranging the most important changes for users to the top in the form of <a href="https://keepachangelog.com/en/1.0.0/">Keep a Changelog</a>. The possibly long list of generated release notes can put below an “All changes” collapsed item as such:</p>
+<p>This will trigger a workflow on TeamCity that will publish a new release on GitHub as soon as it is finished. You can follow the progress <a href="https://dpcbuild.deltares.nl/buildConfiguration/Ribasim_Ribasim_MakeGitHubRelease?mode=builds">here</a>. It also auto-generates a changelog. You need to edit that by moving the auto-generated contents, except the “Full Changelog” link, in a collapsed details block as shown below.</p>
 <pre><code>&lt;details&gt;
 &lt;summary&gt;
 All changes
@@ -309,25 +330,26 @@ All changes
 
 &lt;/details&gt;
 </code></pre>
+<p>Now copy the manually edited changelog entry from changelog.qmd above the details, such that the edited changelog can be seen both from our documentation as well as GitHub releases.</p>
 </section>
-<section id="release-the-ribasim-python-packages-to-pypi" class="level2" data-number="2.4">
-<h2 data-number="2.4" class="anchored" data-anchor-id="release-the-ribasim-python-packages-to-pypi"><span class="header-section-number">2.4</span> Release the Ribasim Python packages to PyPI</h2>
+<section id="release-the-ribasim-python-packages-to-pypi" class="level2" data-number="2.6">
+<h2 data-number="2.6" class="anchored" data-anchor-id="release-the-ribasim-python-packages-to-pypi"><span class="header-section-number">2.6</span> Release the Ribasim Python packages to PyPI</h2>
 <p>To be able to install packages with <code>pip</code>, they need to be released on the Python Package Index (PyPI). In order to publish Ribasim Python or Ribasim API follow the following steps:</p>
 <ol type="1">
 <li><p>Open a terminal and run <code>pixi run publish-ribasim-python</code></p></li>
 <li><p>Open a terminal and run <code>pixi run publish-ribasim-api</code></p></li>
 </ol>
 </section>
-<section id="do-manual-checks" class="level2" data-number="2.5">
-<h2 data-number="2.5" class="anchored" data-anchor-id="do-manual-checks"><span class="header-section-number">2.5</span> Do manual checks</h2>
+<section id="do-manual-checks" class="level2" data-number="2.7">
+<h2 data-number="2.7" class="anchored" data-anchor-id="do-manual-checks"><span class="header-section-number">2.7</span> Do manual checks</h2>
 <p>Our continuous integration (CI) should have caught most issues. A current weak spot in our testing is the QGIS plugin, so it is a good idea to do some manual checks to see if it works properly. Start with running the automated task to see if it can be correctly installed.</p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># This test might give a fatal error on the first run, this is most likely a timing issue.</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Try to run it again when that happens.</span></span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="ex">pixi</span> run test-ribasim-qgis-ui</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>It is a good idea to load new test models if there are any, or test any other changed functionality.</p>
 </section>
-<section id="announce-release" class="level2" data-number="2.6">
-<h2 data-number="2.6" class="anchored" data-anchor-id="announce-release"><span class="header-section-number">2.6</span> Announce release</h2>
+<section id="announce-release" class="level2" data-number="2.8">
+<h2 data-number="2.8" class="anchored" data-anchor-id="announce-release"><span class="header-section-number">2.8</span> Announce release</h2>
 <p>Announce the release in appropriate channels. Include a link to the release notes and assets, which is whatever <a href="https://github.com/Deltares/Ribasim/releases/latest">this</a> resolves to at that time. Also include a link to the <a href="https://deltares.github.io/Ribasim/">documentation</a>.</p>
 
 
@@ -370,18 +392,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -413,7 +424,47 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
@@ -448,7 +499,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
     });
   }
   const xrefs = window.document.querySelectorAll('a.quarto-xref');

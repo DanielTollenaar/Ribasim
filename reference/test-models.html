@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.550">
+<meta name="generator" content="quarto-1.5.55">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Ribasim - Test models</title>
+<title>Test models – Ribasim</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -33,7 +33,7 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
   { counter-reset: source-line 0; }
@@ -122,7 +122,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -160,17 +160,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
-          <div class="quarto-navbar-tools">
+            <div class="quarto-navbar-tools">
 </div>
       </div> <!-- /container-fluid -->
     </nav>
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
         <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../reference/test-models.html">Test models</a></li></ol></nav>
-        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
   </nav>
@@ -200,6 +200,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
 </li>
         <li class="sidebar-item">
+ <span class="menu-text">reference/allocation.qmd</span>
+  </li>
+        <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../reference/python/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Python API</span></a>
@@ -213,9 +216,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
  <span class="menu-text">Nodes</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -288,12 +291,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../reference/node/fractional-flow.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">FractionalFlow</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../reference/node/terminal.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Terminal</span></a>
   </div>
@@ -302,6 +299,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <div class="sidebar-item-container"> 
   <a href="../reference/node/discrete-control.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">DiscreteControl</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../reference/node/continuous-control.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">ContinuousControl</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -317,7 +320,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
         
     </div>
 <!-- main -->
@@ -343,7 +346,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 <p>Ribasim developers use the following models in their testbench and in order to test new features.</p>
-<div id="4b5cabfb" class="cell" data-execution_count="1">
+<div id="44823051" class="cell" data-execution_count="1">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> ribasim_testmodels</span>
@@ -354,270 +357,284 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>        <span class="cf">continue</span></span>
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    model <span class="op">=</span> model_constructor()</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    fig, ax <span class="op">=</span> plt.subplots()</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    fig, ax <span class="op">=</span> plt.subplots(figsize <span class="op">=</span> (<span class="dv">6</span>, <span class="dv">4</span>))</span>
 <span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    model.plot(ax)</span>
 <span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    ax.set_title(label<span class="op">=</span>model_name, loc<span class="op">=</span><span class="st">"left"</span>)</span>
 <span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>    fig.text(<span class="dv">0</span>, <span class="dv">1</span>, model_constructor.__doc__)</span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    fig.tight_layout()</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    ax.axis(<span class="st">'off'</span>)</span>
 <span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>    plt.show()</span>
 <span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>    plt.close(fig)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="test-models_files/figure-html/cell-2-output-1.png" width="676" height="370" class="figure-img"></p>
+<p><img src="test-models_files/figure-html/cell-2-output-1.png" width="739" height="297" class="figure-img"></p>
 </figure>
 </div>
 </div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="test-models_files/figure-html/cell-2-output-2.png" width="677" height="292" class="figure-img"></p>
+<p><img src="test-models_files/figure-html/cell-2-output-2.png" width="721" height="297" class="figure-img"></p>
 </figure>
 </div>
 </div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="test-models_files/figure-html/cell-2-output-3.png" width="724" height="457" class="figure-img"></p>
+<p><img src="test-models_files/figure-html/cell-2-output-3.png" width="576" height="355" class="figure-img"></p>
 </figure>
 </div>
 </div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="test-models_files/figure-html/cell-2-output-4.png" width="724" height="457" class="figure-img"></p>
+<p><img src="test-models_files/figure-html/cell-2-output-4.png" width="576" height="355" class="figure-img"></p>
 </figure>
 </div>
 </div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="test-models_files/figure-html/cell-2-output-5.png" width="724" height="494" class="figure-img"></p>
+<p><img src="test-models_files/figure-html/cell-2-output-5.png" width="693" height="371" class="figure-img"></p>
 </figure>
 </div>
 </div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="test-models_files/figure-html/cell-2-output-6.png" width="677" height="494" class="figure-img"></p>
+<p><img src="test-models_files/figure-html/cell-2-output-6.png" width="629" height="371" class="figure-img"></p>
 </figure>
 </div>
 </div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="test-models_files/figure-html/cell-2-output-7.png" width="677" height="412" class="figure-img"></p>
+<p><img src="test-models_files/figure-html/cell-2-output-7.png" width="696" height="343" class="figure-img"></p>
 </figure>
 </div>
 </div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="test-models_files/figure-html/cell-2-output-8.png" width="676" height="359" class="figure-img"></p>
+<p><img src="test-models_files/figure-html/cell-2-output-8.png" width="696" height="380" class="figure-img"></p>
 </figure>
 </div>
 </div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="test-models_files/figure-html/cell-2-output-9.png" width="677" height="443" class="figure-img"></p>
+<p><img src="test-models_files/figure-html/cell-2-output-9.png" width="706" height="365" class="figure-img"></p>
 </figure>
 </div>
 </div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="test-models_files/figure-html/cell-2-output-10.png" width="677" height="303" class="figure-img"></p>
+<p><img src="test-models_files/figure-html/cell-2-output-10.png" width="739" height="300" class="figure-img"></p>
 </figure>
 </div>
 </div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="test-models_files/figure-html/cell-2-output-11.png" width="677" height="367" class="figure-img"></p>
+<p><img src="test-models_files/figure-html/cell-2-output-11.png" width="706" height="380" class="figure-img"></p>
 </figure>
 </div>
 </div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="test-models_files/figure-html/cell-2-output-12.png" width="676" height="420" class="figure-img"></p>
+<p><img src="test-models_files/figure-html/cell-2-output-12.png" width="687" height="297" class="figure-img"></p>
 </figure>
 </div>
 </div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="test-models_files/figure-html/cell-2-output-13.png" width="713" height="524" class="figure-img"></p>
+<p><img src="test-models_files/figure-html/cell-2-output-13.png" width="696" height="298" class="figure-img"></p>
 </figure>
 </div>
 </div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="test-models_files/figure-html/cell-2-output-14.png" width="677" height="494" class="figure-img"></p>
+<p><img src="test-models_files/figure-html/cell-2-output-14.png" width="738" height="371" class="figure-img"></p>
 </figure>
 </div>
 </div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="test-models_files/figure-html/cell-2-output-15.png" width="677" height="353" class="figure-img"></p>
+<p><img src="test-models_files/figure-html/cell-2-output-15.png" width="629" height="371" class="figure-img"></p>
 </figure>
 </div>
 </div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="test-models_files/figure-html/cell-2-output-16.png" width="677" height="367" class="figure-img"></p>
+<p><img src="test-models_files/figure-html/cell-2-output-16.png" width="706" height="297" class="figure-img"></p>
 </figure>
 </div>
 </div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="test-models_files/figure-html/cell-2-output-17.png" width="676" height="455" class="figure-img"></p>
+<p><img src="test-models_files/figure-html/cell-2-output-17.png" width="687" height="298" class="figure-img"></p>
 </figure>
 </div>
 </div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="test-models_files/figure-html/cell-2-output-18.png" width="677" height="403" class="figure-img"></p>
+<p><img src="test-models_files/figure-html/cell-2-output-18.png" width="739" height="395" class="figure-img"></p>
 </figure>
 </div>
 </div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="test-models_files/figure-html/cell-2-output-19.png" width="677" height="302" class="figure-img"></p>
+<p><img src="test-models_files/figure-html/cell-2-output-19.png" width="706" height="335" class="figure-img"></p>
 </figure>
 </div>
 </div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="test-models_files/figure-html/cell-2-output-20.png" width="711" height="494" class="figure-img"></p>
+<p><img src="test-models_files/figure-html/cell-2-output-20.png" width="706" height="297" class="figure-img"></p>
 </figure>
 </div>
 </div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="test-models_files/figure-html/cell-2-output-21.png" width="649" height="524" class="figure-img"></p>
+<p><img src="test-models_files/figure-html/cell-2-output-21.png" width="640" height="371" class="figure-img"></p>
 </figure>
 </div>
 </div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="test-models_files/figure-html/cell-2-output-22.png" width="676" height="452" class="figure-img"></p>
+<p><img src="test-models_files/figure-html/cell-2-output-22.png" width="649" height="401" class="figure-img"></p>
 </figure>
 </div>
 </div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="test-models_files/figure-html/cell-2-output-23.png" width="677" height="302" class="figure-img"></p>
+<p><img src="test-models_files/figure-html/cell-2-output-23.png" width="739" height="346" class="figure-img"></p>
 </figure>
 </div>
 </div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="test-models_files/figure-html/cell-2-output-24.png" width="606" height="494" class="figure-img"></p>
+<p><img src="test-models_files/figure-html/cell-2-output-24.png" width="721" height="297" class="figure-img"></p>
 </figure>
 </div>
 </div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="test-models_files/figure-html/cell-2-output-25.png" width="607" height="494" class="figure-img"></p>
+<p><img src="test-models_files/figure-html/cell-2-output-25.png" width="538" height="371" class="figure-img"></p>
 </figure>
 </div>
 </div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="test-models_files/figure-html/cell-2-output-26.png" width="676" height="303" class="figure-img"></p>
+<p><img src="test-models_files/figure-html/cell-2-output-26.png" width="512" height="371" class="figure-img"></p>
 </figure>
 </div>
 </div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="test-models_files/figure-html/cell-2-output-27.png" width="676" height="409" class="figure-img"></p>
+<p><img src="test-models_files/figure-html/cell-2-output-27.png" width="716" height="335" class="figure-img"></p>
 </figure>
 </div>
 </div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="test-models_files/figure-html/cell-2-output-28.png" width="676" height="438" class="figure-img"></p>
+<p><img src="test-models_files/figure-html/cell-2-output-28.png" width="692" height="297" class="figure-img"></p>
 </figure>
 </div>
 </div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="test-models_files/figure-html/cell-2-output-29.png" width="681" height="539" class="figure-img"></p>
+<p><img src="test-models_files/figure-html/cell-2-output-29.png" width="678" height="335" class="figure-img"></p>
 </figure>
 </div>
 </div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="test-models_files/figure-html/cell-2-output-30.png" width="676" height="301" class="figure-img"></p>
+<p><img src="test-models_files/figure-html/cell-2-output-30.png" width="690" height="371" class="figure-img"></p>
 </figure>
 </div>
 </div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="test-models_files/figure-html/cell-2-output-31.png" width="627" height="524" class="figure-img"></p>
+<p><img src="test-models_files/figure-html/cell-2-output-31.png" width="630" height="416" class="figure-img"></p>
 </figure>
 </div>
 </div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="test-models_files/figure-html/cell-2-output-32.png" width="676" height="452" class="figure-img"></p>
+<p><img src="test-models_files/figure-html/cell-2-output-32.png" width="739" height="297" class="figure-img"></p>
 </figure>
 </div>
 </div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="test-models_files/figure-html/cell-2-output-33.png" width="676" height="469" class="figure-img"></p>
+<p><img src="test-models_files/figure-html/cell-2-output-33.png" width="552" height="401" class="figure-img"></p>
 </figure>
 </div>
 </div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="test-models_files/figure-html/cell-2-output-34.png" width="697" height="569" class="figure-img"></p>
+<p><img src="test-models_files/figure-html/cell-2-output-34.png" width="739" height="346" class="figure-img"></p>
 </figure>
 </div>
 </div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="test-models_files/figure-html/cell-2-output-35.png" width="676" height="332" class="figure-img"></p>
+<p><img src="test-models_files/figure-html/cell-2-output-35.png" width="739" height="410" class="figure-img"></p>
 </figure>
 </div>
 </div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="test-models_files/figure-html/cell-2-output-36.png" width="676" height="427" class="figure-img"></p>
+<p><img src="test-models_files/figure-html/cell-2-output-36.png" width="664" height="446" class="figure-img"></p>
 </figure>
 </div>
 </div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="test-models_files/figure-html/cell-2-output-37.png" width="677" height="406" class="figure-img"></p>
+<p><img src="test-models_files/figure-html/cell-2-output-37.png" width="739" height="297" class="figure-img"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="test-models_files/figure-html/cell-2-output-38.png" width="739" height="432" class="figure-img"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="test-models_files/figure-html/cell-2-output-39.png" width="679" height="335" class="figure-img"></p>
 </figure>
 </div>
 </div>
@@ -661,18 +678,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -704,7 +710,47 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
@@ -739,7 +785,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
     });
   }
   const xrefs = window.document.querySelectorAll('a.quarto-xref');

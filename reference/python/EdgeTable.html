@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.550">
+<meta name="generator" content="quarto-1.5.55">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Ribasim</title>
+<title>edgetable – Ribasim</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -86,7 +86,7 @@ ul.task-list li input[type="checkbox"] {
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -124,7 +124,7 @@ ul.task-list li input[type="checkbox"] {
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
-          <div class="quarto-navbar-tools">
+            <div class="quarto-navbar-tools">
 </div>
       </div> <!-- /container-fluid -->
     </nav>
@@ -138,7 +138,20 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#ribasim.EdgeTable" id="toc-ribasim.EdgeTable" class="nav-link active" data-scroll-target="#ribasim.EdgeTable"><span class="header-section-number">1</span> EdgeTable</a></li>
+  <li><a href="#ribasim.EdgeTable" id="toc-ribasim.EdgeTable" class="nav-link active" data-scroll-target="#ribasim.EdgeTable"><span class="header-section-number">1</span> EdgeTable</a>
+  <ul class="collapse">
+  <li><a href="#attributes" id="toc-attributes" class="nav-link" data-scroll-target="#attributes"><span class="header-section-number">1.1</span> Attributes</a></li>
+  <li><a href="#methods" id="toc-methods" class="nav-link" data-scroll-target="#methods"><span class="header-section-number">1.2</span> Methods</a>
+  <ul class="collapse">
+  <li><a href="#ribasim.EdgeTable.add" id="toc-ribasim.EdgeTable.add" class="nav-link" data-scroll-target="#ribasim.EdgeTable.add"><span class="header-section-number">1.2.1</span> add</a></li>
+  <li><a href="#ribasim.EdgeTable.columns" id="toc-ribasim.EdgeTable.columns" class="nav-link" data-scroll-target="#ribasim.EdgeTable.columns"><span class="header-section-number">1.2.2</span> columns</a></li>
+  <li><a href="#ribasim.EdgeTable.plot" id="toc-ribasim.EdgeTable.plot" class="nav-link" data-scroll-target="#ribasim.EdgeTable.plot"><span class="header-section-number">1.2.3</span> plot</a></li>
+  <li><a href="#ribasim.EdgeTable.set_filepath" id="toc-ribasim.EdgeTable.set_filepath" class="nav-link" data-scroll-target="#ribasim.EdgeTable.set_filepath"><span class="header-section-number">1.2.4</span> set_filepath</a></li>
+  <li><a href="#ribasim.EdgeTable.sort" id="toc-ribasim.EdgeTable.sort" class="nav-link" data-scroll-target="#ribasim.EdgeTable.sort"><span class="header-section-number">1.2.5</span> sort</a></li>
+  <li><a href="#ribasim.EdgeTable.tablename" id="toc-ribasim.EdgeTable.tablename" class="nav-link" data-scroll-target="#ribasim.EdgeTable.tablename"><span class="header-section-number">1.2.6</span> tablename</a></li>
+  <li><a href="#ribasim.EdgeTable.tableschema" id="toc-ribasim.EdgeTable.tableschema" class="nav-link" data-scroll-target="#ribasim.EdgeTable.tableschema"><span class="header-section-number">1.2.7</span> tableschema</a></li>
+  </ul></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -152,8 +165,195 @@ ul.task-list li input[type="checkbox"] {
 <h1 data-number="1"><span class="header-section-number">1</span> EdgeTable</h1>
 <p><code>EdgeTable()</code></p>
 <p>Defines the connections between nodes.</p>
+<section id="attributes" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="attributes"><span class="header-section-number">1.1</span> Attributes</h2>
+<table class="caption-top">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#ribasim.EdgeTable.df">df</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#ribasim.EdgeTable.filepath">filepath</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#ribasim.EdgeTable.model_config">model_config</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="methods" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="methods"><span class="header-section-number">1.2</span> Methods</h2>
+<table class="caption-top">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#ribasim.EdgeTable.add">add</a></td>
+<td>Add an edge between nodes. The type of the edge (flow or control)</td>
+</tr>
+<tr>
+<td><a href="#ribasim.EdgeTable.columns">columns</a></td>
+<td>Retrieve column names.</td>
+</tr>
+<tr>
+<td><a href="#ribasim.EdgeTable.plot">plot</a></td>
+<td>Plot the edges of the model.</td>
+</tr>
+<tr>
+<td><a href="#ribasim.EdgeTable.set_filepath">set_filepath</a></td>
+<td>Set the filepath of this instance.</td>
+</tr>
+<tr>
+<td><a href="#ribasim.EdgeTable.sort">sort</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#ribasim.EdgeTable.tablename">tablename</a></td>
+<td>Retrieve tablename based on attached Schema.</td>
+</tr>
+<tr>
+<td><a href="#ribasim.EdgeTable.tableschema">tableschema</a></td>
+<td>Retrieve Pandera Schema.</td>
+</tr>
+</tbody>
+</table>
+<section id="ribasim.EdgeTable.add" class="level3" data-number="1.2.1">
+<h3 data-number="1.2.1" class="anchored" data-anchor-id="ribasim.EdgeTable.add"><span class="header-section-number">1.2.1</span> add</h3>
+<p><code>EdgeTable.add(from_node, to_node, geometry=None, name='', subnetwork_id=None, **kwargs)</code></p>
+<p>Add an edge between nodes. The type of the edge (flow or control) is automatically inferred from the type of the <code>from_node</code>.</p>
+<section id="parameters" class="level4" data-number="1.2.1.1">
+<h4 data-number="1.2.1.1" class="anchored" data-anchor-id="parameters"><span class="header-section-number">1.2.1.1</span> Parameters</h4>
+<table class="caption-top">
+<colgroup>
+<col style="width: 7%">
+<col style="width: 17%">
+<col style="width: 70%">
+<col style="width: 5%">
+</colgroup>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>from_node</code></td>
+<td>NodeData</td>
+<td>A node indexed by its node ID, e.g.&nbsp;<code>model.basin[1]</code></td>
+<td><em>required</em></td>
+</tr>
+<tr>
+<td><code>to_node</code></td>
+<td>NodeData</td>
+<td>A node indexed by its node ID, e.g.&nbsp;<code>model.linear_resistance[1]</code></td>
+<td><em>required</em></td>
+</tr>
+<tr>
+<td><code>geometry</code></td>
+<td>LineString | MultiLineString | None</td>
+<td>The geometry of a line. If not supplied, it creates a straight line between the nodes.</td>
+<td><code>None</code></td>
+</tr>
+<tr>
+<td><code>name</code></td>
+<td>str</td>
+<td>An optional name for the edge.</td>
+<td><code>''</code></td>
+</tr>
+<tr>
+<td><code>subnetwork_id</code></td>
+<td>int | None</td>
+<td>An optional subnetwork id for the edge. This edge indicates a source for the allocation algorithm, and should thus not be set for every edge in a subnetwork.</td>
+<td><code>None</code></td>
+</tr>
+<tr>
+<td><code>**kwargs</code></td>
+<td>Dict</td>
+<td></td>
+<td><code>{}</code></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="ribasim.EdgeTable.columns" class="level3" data-number="1.2.2">
+<h3 data-number="1.2.2" class="anchored" data-anchor-id="ribasim.EdgeTable.columns"><span class="header-section-number">1.2.2</span> columns</h3>
+<p><code>EdgeTable.columns()</code></p>
+<p>Retrieve column names.</p>
+</section>
+<section id="ribasim.EdgeTable.plot" class="level3" data-number="1.2.3">
+<h3 data-number="1.2.3" class="anchored" data-anchor-id="ribasim.EdgeTable.plot"><span class="header-section-number">1.2.3</span> plot</h3>
+<p><code>EdgeTable.plot(**kwargs)</code></p>
+<p>Plot the edges of the model.</p>
+<section id="parameters-1" class="level4" data-number="1.2.3.1">
+<h4 data-number="1.2.3.1" class="anchored" data-anchor-id="parameters-1"><span class="header-section-number">1.2.3.1</span> Parameters</h4>
+<table class="caption-top">
+<colgroup>
+<col style="width: 15%">
+<col style="width: 10%">
+<col style="width: 60%">
+<col style="width: 13%">
+</colgroup>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>**kwargs</code></td>
+<td>Dict</td>
+<td>Supported: ‘ax’, ‘color_flow’, ‘color_control’</td>
+<td><code>{}</code></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="ribasim.EdgeTable.set_filepath" class="level3" data-number="1.2.4">
+<h3 data-number="1.2.4" class="anchored" data-anchor-id="ribasim.EdgeTable.set_filepath"><span class="header-section-number">1.2.4</span> set_filepath</h3>
+<p><code>EdgeTable.set_filepath(filepath)</code></p>
+<p>Set the filepath of this instance.</p>
+<p>Args: filepath (Path): The filepath to set.</p>
+</section>
+<section id="ribasim.EdgeTable.sort" class="level3" data-number="1.2.5">
+<h3 data-number="1.2.5" class="anchored" data-anchor-id="ribasim.EdgeTable.sort"><span class="header-section-number">1.2.5</span> sort</h3>
+<p><code>EdgeTable.sort()</code></p>
+</section>
+<section id="ribasim.EdgeTable.tablename" class="level3" data-number="1.2.6">
+<h3 data-number="1.2.6" class="anchored" data-anchor-id="ribasim.EdgeTable.tablename"><span class="header-section-number">1.2.6</span> tablename</h3>
+<p><code>EdgeTable.tablename()</code></p>
+<p>Retrieve tablename based on attached Schema.</p>
+<p>NodeSchema -&gt; Schema TabularRatingCurveStaticSchema -&gt; TabularRatingCurve / Static</p>
+</section>
+<section id="ribasim.EdgeTable.tableschema" class="level3" data-number="1.2.7">
+<h3 data-number="1.2.7" class="anchored" data-anchor-id="ribasim.EdgeTable.tableschema"><span class="header-section-number">1.2.7</span> tableschema</h3>
+<p><code>EdgeTable.tableschema()</code></p>
+<p>Retrieve Pandera Schema.</p>
+<p>The type of the field <code>df</code> is known to always be an DataFrame[TableT]]] | None</p>
 
 
+</section>
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -192,18 +392,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -235,7 +424,47 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
@@ -270,7 +499,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
     });
   }
   const xrefs = window.document.querySelectorAll('a.quarto-xref');

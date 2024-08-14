@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.550">
+<meta name="generator" content="quarto-1.5.55">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Ribasim - Basin</title>
+<title>Basin – Ribasim</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -69,7 +103,7 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <script type="text/javascript">
@@ -117,7 +151,7 @@ window.Quarto = {
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -155,17 +189,17 @@ window.Quarto = {
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
-          <div class="quarto-navbar-tools">
+            <div class="quarto-navbar-tools">
 </div>
       </div> <!-- /container-fluid -->
     </nav>
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
         <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../reference/node/basin.html">Nodes</a></li><li class="breadcrumb-item"><a href="../../reference/node/basin.html">Basin</a></li></ol></nav>
-        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
   </nav>
@@ -195,6 +229,9 @@ window.Quarto = {
   </div>
 </li>
         <li class="sidebar-item">
+ <span class="menu-text">reference/allocation.qmd</span>
+  </li>
+        <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../reference/python/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Python API</span></a>
@@ -208,9 +245,9 @@ window.Quarto = {
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
  <span class="menu-text">Nodes</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -283,12 +320,6 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../reference/node/fractional-flow.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">FractionalFlow</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../../reference/node/terminal.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Terminal</span></a>
   </div>
@@ -297,6 +328,12 @@ window.Quarto = {
   <div class="sidebar-item-container"> 
   <a href="../../reference/node/discrete-control.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">DiscreteControl</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reference/node/continuous-control.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">ContinuousControl</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -321,13 +358,20 @@ window.Quarto = {
   <ul class="collapse">
   <li><a href="#static" id="toc-static" class="nav-link" data-scroll-target="#static"><span class="header-section-number">1.1</span> Static</a></li>
   <li><a href="#time" id="toc-time" class="nav-link" data-scroll-target="#time"><span class="header-section-number">1.2</span> Time</a></li>
-  <li><a href="#state" id="toc-state" class="nav-link" data-scroll-target="#state"><span class="header-section-number">1.3</span> State</a></li>
+  <li><a href="#sec-state" id="toc-sec-state" class="nav-link" data-scroll-target="#sec-state"><span class="header-section-number">1.3</span> State</a></li>
   <li><a href="#profile" id="toc-profile" class="nav-link" data-scroll-target="#profile"><span class="header-section-number">1.4</span> Profile</a></li>
   <li><a href="#area" id="toc-area" class="nav-link" data-scroll-target="#area"><span class="header-section-number">1.5</span> Area</a></li>
   <li><a href="#subgrid" id="toc-subgrid" class="nav-link" data-scroll-target="#subgrid"><span class="header-section-number">1.6</span> Subgrid</a></li>
   <li><a href="#sec-basin-conc" id="toc-sec-basin-conc" class="nav-link" data-scroll-target="#sec-basin-conc"><span class="header-section-number">1.7</span> Concentration</a></li>
   <li><a href="#sec-basin-conc-state" id="toc-sec-basin-conc-state" class="nav-link" data-scroll-target="#sec-basin-conc-state"><span class="header-section-number">1.8</span> ConcentrationState</a></li>
   <li><a href="#concentrationexternal" id="toc-concentrationexternal" class="nav-link" data-scroll-target="#concentrationexternal"><span class="header-section-number">1.9</span> ConcentrationExternal</a></li>
+  </ul></li>
+  <li><a href="#equations" id="toc-equations" class="nav-link" data-scroll-target="#equations"><span class="header-section-number">2</span> Equations</a>
+  <ul class="collapse">
+  <li><a href="#sec-reduction_factor" id="toc-sec-reduction_factor" class="nav-link" data-scroll-target="#sec-reduction_factor"><span class="header-section-number">2.1</span> The reduction factor</a></li>
+  <li><a href="#precipitation" id="toc-precipitation" class="nav-link" data-scroll-target="#precipitation"><span class="header-section-number">2.2</span> Precipitation</a></li>
+  <li><a href="#evaporation" id="toc-evaporation" class="nav-link" data-scroll-target="#evaporation"><span class="header-section-number">2.3</span> Evaporation</a></li>
+  <li><a href="#infiltration-and-drainage" id="toc-infiltration-and-drainage" class="nav-link" data-scroll-target="#infiltration-and-drainage"><span class="header-section-number">2.4</span> Infiltration and Drainage</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -360,9 +404,9 @@ window.Quarto = {
 <section id="static" class="level2" data-number="1.1">
 <h2 data-number="1.1" class="anchored" data-anchor-id="static"><span class="header-section-number">1.1</span> Static</h2>
 <p>The <code>Basin / static</code> table can be used to set the static value of variables. The time table has a similar schema, with the time column added. A static value for a variable is only used if there is no dynamic forcing data for that variable. Specifically, if there is either no time table, it is empty, or all timestamps of that variable are missing.</p>
-<table class="table">
+<table class="caption-top">
 <thead>
-<tr class="header">
+<tr>
 <th>column</th>
 <th>type</th>
 <th>unit</th>
@@ -370,38 +414,32 @@ window.Quarto = {
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>node_id</td>
 <td>Int32</td>
 <td>-</td>
 <td>sorted</td>
 </tr>
-<tr class="even">
+<tr>
 <td>precipitation</td>
 <td>Float64</td>
 <td><span class="math inline">\(m s^{-1}\)</span></td>
 <td>non-negative</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>potential_evaporation</td>
 <td>Float64</td>
 <td><span class="math inline">\(m s^{-1}\)</span></td>
 <td>non-negative</td>
 </tr>
-<tr class="even">
+<tr>
 <td>drainage</td>
 <td>Float64</td>
 <td><span class="math inline">\(m^3 s^{-1}\)</span></td>
 <td>non-negative</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>infiltration</td>
-<td>Float64</td>
-<td><span class="math inline">\(m^3 s^{-1}\)</span></td>
-<td>non-negative</td>
-</tr>
-<tr class="even">
-<td>urban_runoff</td>
 <td>Float64</td>
 <td><span class="math inline">\(m^3 s^{-1}\)</span></td>
 <td>non-negative</td>
@@ -414,12 +452,12 @@ window.Quarto = {
 <h2 data-number="1.2" class="anchored" data-anchor-id="time"><span class="header-section-number">1.2</span> Time</h2>
 <p>This table is the transient form of the <code>Basin</code> table. The only difference is that a time column is added. The table must by sorted by time, and per time it must be sorted by <code>node_id</code>. At the given timestamps the values are set in the simulation, such that the timeseries can be seen as forward filled.</p>
 </section>
-<section id="state" class="level2" data-number="1.3">
-<h2 data-number="1.3" class="anchored" data-anchor-id="state"><span class="header-section-number">1.3</span> State</h2>
-<p>The state table aims to capture the full state of the Basin, such that it can be used as an initial condition, potentially the outcome of an earlier simulation. Currently only the Basin node types have state.</p>
-<table class="table">
+<section id="sec-state" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="sec-state"><span class="header-section-number">1.3</span> State</h2>
+<p>The state table gives the initial water levels of all Basins.</p>
+<table class="caption-top">
 <thead>
-<tr class="header">
+<tr>
 <th>column</th>
 <th>type</th>
 <th>unit</th>
@@ -427,13 +465,13 @@ window.Quarto = {
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>node_id</td>
 <td>Int32</td>
 <td>-</td>
 <td>sorted</td>
 </tr>
-<tr class="even">
+<tr>
 <td>level</td>
 <td>Float64</td>
 <td><span class="math inline">\(m\)</span></td>
@@ -441,12 +479,15 @@ window.Quarto = {
 </tr>
 </tbody>
 </table>
-<p>Each Basin ID needs to be in the table.</p>
+<p>Each Basin ID needs to be in the table. To use the final state of an earlier simulation as an initial condition, copy <a href="../../reference/usage.html#sec-state"><code>results/basin_state.arrow</code></a> over to the <code>input_dir</code>, and point the TOML to it:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode toml code-with-copy"><code class="sourceCode toml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">[basin]</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="dt">state</span> <span class="op">=</span> <span class="st">"basin_state.arrow"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>This will start of the simulation with the same water levels as the end of the earlier simulation. Since there is no time information in this state, the user is responsible to ensure that the earlier <code>endtime</code> matches the current <code>starttime</code>. This only applies when the user wishes to continue an existing simulation as if it was one continuous simulation.</p>
 </section>
 <section id="profile" class="level2" data-number="1.4">
 <h2 data-number="1.4" class="anchored" data-anchor-id="profile"><span class="header-section-number">1.4</span> Profile</h2>
 <p>The profile table defines the physical dimensions of the storage reservoir of each basin.</p>
-<table class="table">
+<table class="caption-top">
 <colgroup>
 <col style="width: 23%">
 <col style="width: 17%">
@@ -454,7 +495,7 @@ window.Quarto = {
 <col style="width: 28%">
 </colgroup>
 <thead>
-<tr class="header">
+<tr>
 <th>column</th>
 <th>type</th>
 <th>unit</th>
@@ -462,19 +503,19 @@ window.Quarto = {
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>node_id</td>
 <td>Int32</td>
 <td>-</td>
 <td>sorted</td>
 </tr>
-<tr class="even">
+<tr>
 <td>area</td>
 <td>Float64</td>
 <td><span class="math inline">\(m^2\)</span></td>
 <td>non-negative, per node_id: start positive and not decreasing</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>level</td>
 <td>Float64</td>
 <td><span class="math inline">\(m\)</span></td>
@@ -482,32 +523,32 @@ window.Quarto = {
 </tr>
 </tbody>
 </table>
-<p>The level is the level at the basin outlet. All levels are defined in meters above a datum that is the same for the entire model. An example of the first 5 rows of such a table is given below. The first 4 rows define the profile of ID <code>2</code>. The number of rows can vary per ID, and must be at least 2. Using a very large number of rows may impact performance.</p>
-<table class="table">
+<p>The level is the level at the basin outlet. All levels are defined in meters above a datum that is the same for the entire model. An example of the first 4 rows of such a table is given below. The first 3 rows define the profile of ID <code>2</code>. The number of rows can vary per ID, and must be at least 2. Using a very large number of rows may impact performance.</p>
+<table class="caption-top">
 <thead>
-<tr class="header">
+<tr>
 <th>node_id</th>
 <th>area</th>
 <th>level</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>2</td>
 <td>1.0</td>
 <td>6.0</td>
 </tr>
-<tr class="even">
+<tr>
 <td>2</td>
 <td>1000.0</td>
 <td>7.0</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>2</td>
 <td>1000.0</td>
 <td>9.0</td>
 </tr>
-<tr class="even">
+<tr>
 <td>3</td>
 <td>1.0</td>
 <td>2.2</td>
@@ -519,21 +560,21 @@ window.Quarto = {
 <section id="area" class="level2" data-number="1.5">
 <h2 data-number="1.5" class="anchored" data-anchor-id="area"><span class="header-section-number">1.5</span> Area</h2>
 <p>The optional area table is not used during computation, but provides a place to associate areas in the form of polygons to Basins. Using this makes it easier to recognize which water or land surfaces are represented by Basins.</p>
-<table class="table">
+<table class="caption-top">
 <thead>
-<tr class="header">
+<tr>
 <th>column</th>
 <th>type</th>
 <th>restriction</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>node_id</td>
 <td>Int32</td>
 <td>sorted</td>
 </tr>
-<tr class="even">
+<tr>
 <td>geom</td>
 <td>Polygon or MultiPolygon</td>
 <td>(optional)</td>
@@ -544,9 +585,9 @@ window.Quarto = {
 <section id="subgrid" class="level2" data-number="1.6">
 <h2 data-number="1.6" class="anchored" data-anchor-id="subgrid"><span class="header-section-number">1.6</span> Subgrid</h2>
 <p>The subgrid table defines a piecewise linear interpolation from a basin water level to a subgrid element water level. Many subgrid elements may be associated with a single basin, each with distinct interpolation functions. This functionality can be used to translate a single lumped basin level to a more spatially detailed representation (e.g comparable to the output of a hydrodynamic simulation).</p>
-<table class="table">
+<table class="caption-top">
 <thead>
-<tr class="header">
+<tr>
 <th>column</th>
 <th>type</th>
 <th>unit</th>
@@ -554,25 +595,25 @@ window.Quarto = {
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>subgrid_id</td>
 <td>Int32</td>
 <td>-</td>
 <td>sorted</td>
 </tr>
-<tr class="even">
+<tr>
 <td>node_id</td>
 <td>Int32</td>
 <td>-</td>
 <td>constant per subgrid_id</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>basin_level</td>
 <td>Float64</td>
 <td><span class="math inline">\(m\)</span></td>
 <td>sorted per subgrid_id</td>
 </tr>
-<tr class="even">
+<tr>
 <td>subgrid_level</td>
 <td>Float64</td>
 <td><span class="math inline">\(m\)</span></td>
@@ -581,9 +622,9 @@ window.Quarto = {
 </tbody>
 </table>
 <p>The table below shows example input for two subgrid elements:</p>
-<table class="table">
+<table class="caption-top">
 <thead>
-<tr class="header">
+<tr>
 <th>subgrid_id</th>
 <th>node_id</th>
 <th>basin_level</th>
@@ -591,37 +632,37 @@ window.Quarto = {
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>1</td>
 <td>9</td>
 <td>0.0</td>
 <td>0.0</td>
 </tr>
-<tr class="even">
+<tr>
 <td>1</td>
 <td>9</td>
 <td>1.0</td>
 <td>1.0</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>1</td>
 <td>9</td>
 <td>2.0</td>
 <td>2.0</td>
 </tr>
-<tr class="even">
+<tr>
 <td>2</td>
 <td>9</td>
 <td>0.0</td>
 <td>0.5</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>2</td>
 <td>9</td>
 <td>1.0</td>
 <td>1.5</td>
 </tr>
-<tr class="even">
+<tr>
 <td>2</td>
 <td>9</td>
 <td>2.0</td>
@@ -635,7 +676,7 @@ window.Quarto = {
 <section id="sec-basin-conc" class="level2" data-number="1.7">
 <h2 data-number="1.7" class="anchored" data-anchor-id="sec-basin-conc"><span class="header-section-number">1.7</span> Concentration</h2>
 <p>This table defines the concentration(s) of (a) substance(s) for the inflow boundaries of a Basin node.</p>
-<table class="table">
+<table class="caption-top">
 <colgroup>
 <col style="width: 27%">
 <col style="width: 17%">
@@ -643,7 +684,7 @@ window.Quarto = {
 <col style="width: 23%">
 </colgroup>
 <thead>
-<tr class="header">
+<tr>
 <th>column</th>
 <th>type</th>
 <th>unit</th>
@@ -651,31 +692,31 @@ window.Quarto = {
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>node_id</td>
 <td>Int32</td>
 <td>-</td>
 <td>sorted</td>
 </tr>
-<tr class="even">
+<tr>
 <td>time</td>
 <td>DateTime</td>
 <td>-</td>
 <td>sorted per node_id</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>substance</td>
 <td>String</td>
 <td></td>
 <td>can correspond to known Delwaq substances</td>
 </tr>
-<tr class="even">
+<tr>
 <td>drainage</td>
 <td>Float64</td>
 <td><span class="math inline">\(g m^{-3}\)</span></td>
 <td>(optional)</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>precipitation</td>
 <td>Float64</td>
 <td><span class="math inline">\(g m^{-3}\)</span></td>
@@ -687,7 +728,7 @@ window.Quarto = {
 <section id="sec-basin-conc-state" class="level2" data-number="1.8">
 <h2 data-number="1.8" class="anchored" data-anchor-id="sec-basin-conc-state"><span class="header-section-number">1.8</span> ConcentrationState</h2>
 <p>This table defines the concentration(s) of (a) substance(s) in the basin at the start of the simulation.</p>
-<table class="table">
+<table class="caption-top">
 <colgroup>
 <col style="width: 31%">
 <col style="width: 17%">
@@ -695,7 +736,7 @@ window.Quarto = {
 <col style="width: 24%">
 </colgroup>
 <thead>
-<tr class="header">
+<tr>
 <th>column</th>
 <th>type</th>
 <th>unit</th>
@@ -703,25 +744,25 @@ window.Quarto = {
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>node_id</td>
 <td>Int32</td>
 <td>-</td>
 <td>sorted</td>
 </tr>
-<tr class="even">
+<tr>
 <td>time</td>
 <td>DateTime</td>
 <td>-</td>
 <td>sorted per node_id</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>substance</td>
 <td>String</td>
 <td>-</td>
 <td>can correspond to known Delwaq substances</td>
 </tr>
-<tr class="even">
+<tr>
 <td>concentration</td>
 <td>Float64</td>
 <td><span class="math inline">\(g m^{-3}\)</span></td>
@@ -733,7 +774,7 @@ window.Quarto = {
 <section id="concentrationexternal" class="level2" data-number="1.9">
 <h2 data-number="1.9" class="anchored" data-anchor-id="concentrationexternal"><span class="header-section-number">1.9</span> ConcentrationExternal</h2>
 <p>This table is used for (external) concentrations, that can be used for Control lookups.</p>
-<table class="table">
+<table class="caption-top">
 <colgroup>
 <col style="width: 31%">
 <col style="width: 17%">
@@ -741,7 +782,7 @@ window.Quarto = {
 <col style="width: 24%">
 </colgroup>
 <thead>
-<tr class="header">
+<tr>
 <th>column</th>
 <th>type</th>
 <th>unit</th>
@@ -749,25 +790,25 @@ window.Quarto = {
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>node_id</td>
 <td>Int32</td>
 <td>-</td>
 <td>sorted</td>
 </tr>
-<tr class="even">
+<tr>
 <td>time</td>
 <td>DateTime</td>
 <td>-</td>
 <td>sorted per node_id</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>substance</td>
 <td>String</td>
 <td>-</td>
 <td>can correspond to known Delwaq substances</td>
 </tr>
-<tr class="even">
+<tr>
 <td>concentration</td>
 <td>Float64</td>
 <td><span class="math inline">\(g m^{-3}\)</span></td>
@@ -775,6 +816,100 @@ window.Quarto = {
 </tr>
 </tbody>
 </table>
+</section>
+</section>
+<section id="equations" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Equations</h1>
+<section id="sec-reduction_factor" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="sec-reduction_factor"><span class="header-section-number">2.1</span> The reduction factor</h2>
+<p>At several points in the equations below a <em>reduction factor</em> is used. This is a term that makes certain transitions more smooth, for instance when a pump stops providing water when its source basin dries up. The reduction factor is given by</p>
+<p><span class="math display">\[\begin{align}
+    \phi(x; p) =
+    \begin{cases}
+    0 &amp;\text{if}\quad x &lt; 0 \\
+        -2 \left(\frac{x}{p}\right)^3 + 3\left(\frac{x}{p}\right)^2 &amp;\text{if}\quad 0 \le x \le p \\
+        1 &amp;\text{if}\quad x &gt; p
+    \end{cases}
+\end{align}\]</span></p>
+<p>Here <span class="math inline">\(p &gt; 0\)</span> is the threshold value which determines the interval <span class="math inline">\([0,p]\)</span> of the smooth transition between <span class="math inline">\(0\)</span> and <span class="math inline">\(1\)</span>, see the plot below.</p>
+<div id="6d07f750" class="cell" data-execution_count="1">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> f(x, p <span class="op">=</span> <span class="dv">3</span>):</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    x_scaled <span class="op">=</span> x <span class="op">/</span> p</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>    phi <span class="op">=</span> (<span class="op">-</span><span class="dv">2</span> <span class="op">*</span> x_scaled <span class="op">+</span> <span class="dv">3</span>) <span class="op">*</span> x_scaled<span class="op">**</span><span class="dv">2</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>    phi <span class="op">=</span> np.where(x <span class="op">&lt;</span> <span class="dv">0</span>, <span class="dv">0</span>, phi)</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>    phi <span class="op">=</span> np.where(x <span class="op">&gt;</span> p, <span class="dv">1</span>, phi)</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> phi</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>fontsize <span class="op">=</span> <span class="dv">15</span></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>p <span class="op">=</span> <span class="dv">3</span></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>N <span class="op">=</span> <span class="dv">100</span></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>x_min <span class="op">=</span> <span class="op">-</span><span class="dv">1</span></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>x_max <span class="op">=</span> <span class="dv">4</span></span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> np.linspace(x_min,x_max,N)</span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>phi <span class="op">=</span> f(x,p)</span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>fig,ax <span class="op">=</span> plt.subplots(dpi<span class="op">=</span><span class="dv">80</span>)</span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>ax.plot(x,phi)</span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>y_lim <span class="op">=</span> ax.get_ylim()</span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>ax.set_xticks([<span class="dv">0</span>,p], [<span class="dv">0</span>,<span class="st">"$p$"</span>], fontsize<span class="op">=</span>fontsize)</span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>ax.set_yticks([<span class="dv">0</span>,<span class="dv">1</span>], [<span class="dv">0</span>,<span class="dv">1</span>], fontsize<span class="op">=</span>fontsize)</span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>ax.hlines([<span class="dv">0</span>,<span class="dv">1</span>],x_min,x_max, color <span class="op">=</span> <span class="st">"k"</span>, ls <span class="op">=</span> <span class="st">":"</span>, zorder<span class="op">=-</span><span class="dv">1</span>)</span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a>ax.vlines([<span class="dv">0</span>,p], <span class="op">*</span>y_lim, color <span class="op">=</span> <span class="st">"k"</span>, ls <span class="op">=</span> <span class="st">":"</span>)</span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a>ax.set_xlim(x_min,x_max)</span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a>ax.set_xlabel(<span class="st">"$x$"</span>, fontsize<span class="op">=</span>fontsize)</span>
+<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a>ax.set_ylabel(<span class="vs">r"$\phi(x;p)$"</span>, fontsize<span class="op">=</span>fontsize)</span>
+<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a>ax.set_ylim(y_lim)</span>
+<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a>fig.tight_layout()</span>
+<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="basin_files/figure-html/cell-2-output-1.png" width="551" height="394" class="figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="precipitation" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="precipitation"><span class="header-section-number">2.2</span> Precipitation</h2>
+<p>The precipitation term is given by</p>
+<p><span id="eq-precip"><span class="math display">\[
+    Q_P = P \cdot A.
+\tag{1}\]</span></span></p>
+<p>Here <span class="math inline">\(P = P(t)\)</span> is the precipitation rate and <span class="math inline">\(A\)</span> is the maximum area given in the <code>Basin / profile</code> table. Precipitation in the Basin area is assumed to be directly added to the Basin storage. The modeler needs to ensure all precipitation enters the model, and there is no overlap in the maximum profile areas, otherwise extra water is created. If a part of the catchment is not in any Basin profile, the modeler has to verify that water source is not forgotten. It can for instance be converted to a flow rate and added to a Basin as a FlowBoundary.</p>
+</section>
+<section id="evaporation" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="evaporation"><span class="header-section-number">2.3</span> Evaporation</h2>
+<p>The evaporation term is given by</p>
+<p><span id="eq-evap"><span class="math display">\[
+    Q_E = E_\text{pot} \cdot A(u) \cdot \phi(d;0.1).
+\tag{2}\]</span></span></p>
+<p>Here <span class="math inline">\(E_\text{pot} = E_\text{pot}(t)\)</span> is the potential evaporation rate and <span class="math inline">\(A\)</span> is the wetted area. <span class="math inline">\(\phi\)</span> is the <a href="../../concept/equations.html#sec-reduction_factor">reduction factor</a> which depends on the depth <span class="math inline">\(d\)</span>. It provides a smooth gradient as <span class="math inline">\(u \rightarrow 0\)</span>.</p>
+<p>A straightforward formulation <span class="math inline">\(Q_E = \mathrm{max}(E_\text{pot} A(u), 0)\)</span> is unsuitable, as <span class="math inline">\(\frac{\mathrm{d}Q_E}{\mathrm{d}u}(u=0)\)</span> is not well-defined.</p>
+<p>A non-smooth derivative results in extremely small timesteps and long computation time. In a physical interpretation, evaporation is switched on or off per individual droplet of water. In general, the effect of the reduction term is negligible, or not even necessary. As a surface water dries, its wetted area decreases and so does the evaporative flux. However, for (simplified) cases with constant wetted surface (a rectangular profile), evaporation only stops at <span class="math inline">\(u = 0\)</span>.</p>
+</section>
+<section id="infiltration-and-drainage" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="infiltration-and-drainage"><span class="header-section-number">2.4</span> Infiltration and Drainage</h2>
+<p>Infiltration is provided as a lump sum for the Basin. If Ribasim is coupled with MODFLOW 6, the infiltration is computed as the sum of all <strong>positive</strong> flows of the MODFLOW 6 boundary conditions in the Basin:</p>
+<p><span id="eq-inf"><span class="math display">\[
+    Q_\text{inf} = \sum_{i=1}^{n} \sum_{j=1}^{m} \max(Q_{\mathrm{mf6}_{i,j}}, 0.0)
+\tag{3}\]</span></span></p>
+<p>Where <span class="math inline">\(i\)</span> is the index of the boundary condition, <span class="math inline">\(j\)</span> the MODFLOW 6 cell index, <span class="math inline">\(n\)</span> the number of boundary conditions, and <span class="math inline">\(m\)</span> the number of MODFLOW 6 cells in the Basin. <span class="math inline">\(Q_{\mathrm{mf6}_{i,j}}\)</span> is the flow computed by MODFLOW 6 for cell <span class="math inline">\(j\)</span> for boundary condition <span class="math inline">\(i\)</span>.</p>
+<p>Drainage is a lump sum for the Basin, and consists of the sum of the absolute value of all <strong>negative</strong> flows of the MODFLOW 6 boundary conditions in the Basin.</p>
+<p><span id="eq-drn"><span class="math display">\[
+    Q_\text{drn} = \sum_{i=1}^{n} \sum_{j=1}^{m} \left| \min(Q_{\mathrm{mf6}_{i,j}}, 0.0) \right|
+\tag{4}\]</span></span></p>
+<p>The interaction with MODFLOW 6 boundary conditions is explained in greater detail in the <a href="https://deltares.github.io/iMOD-Documentation/coupler.html">the iMOD Coupler docs</a>.</p>
 
 
 </section>
@@ -816,18 +951,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -859,7 +983,47 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
@@ -894,7 +1058,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
     });
   }
   const xrefs = window.document.querySelectorAll('a.quarto-xref');

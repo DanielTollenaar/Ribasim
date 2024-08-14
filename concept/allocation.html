@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.550">
+<meta name="generator" content="quarto-1.5.55">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Ribasim - Allocation</title>
+<title>Allocation – Ribasim</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -33,7 +33,7 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
   { counter-reset: source-line 0; }
@@ -102,7 +102,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   }
 }</script>
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <script type="text/javascript">
@@ -150,7 +150,7 @@ window.Quarto = {
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -188,17 +188,17 @@ window.Quarto = {
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
-          <div class="quarto-navbar-tools">
+            <div class="quarto-navbar-tools">
 </div>
       </div> <!-- /container-fluid -->
     </nav>
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
         <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../concept/core.html">Implementation</a></li><li class="breadcrumb-item"><a href="../concept/allocation.html">Allocation</a></li></ol></nav>
-        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
   </nav>
@@ -223,9 +223,9 @@ window.Quarto = {
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
  <span class="menu-text">Numerics</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -252,9 +252,9 @@ window.Quarto = {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
  <span class="menu-text">Implementation</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -340,6 +340,7 @@ window.Quarto = {
 <h1 data-number="1"><span class="header-section-number">1</span> Introduction</h1>
 <p>Allocation is the process of assigning an allocated flow rate to demand nodes in the physical layer of the model based on information about sources, the different demand nodes over various priorities, constraints introduced by nodes, local water availability and graph topology. The allocation procedure implemented in Ribasim is heavily inspired by the <a href="https://en.wikipedia.org/wiki/Maximum_flow_problem">maximum flow problem</a>.</p>
 <p>The allocation problem is solved per subnetwork (and main network) of the Ribasim model. Each subnetwork is used to formulate an optimization problem with the <a href="https://jump.dev/JuMP.jl/stable/">JuMP</a> package, which is solved using the <a href="https://highs.dev/">HiGHS solver</a>. For more in-depth information see also the example of solving the maximum flow problem with <code>JuMP.jl</code> <a href="https://jump.dev/JuMP.jl/stable/tutorials/linear/network_flows/#The-max-flow-problem">here</a>.</p>
+<p>Before the optimization for each priority there is a simple step that tries to allocate flow to the <code>UserDemand</code> nodes from the their directly connected basin.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -439,9 +440,9 @@ Note
 <h4 data-number="3.2.2.1" class="anchored" data-anchor-id="flow-magnitude-and-direction-constraints"><span class="header-section-number">3.2.2.1</span> Flow magnitude and direction constraints</h4>
 <p>Nodes in the Ribasim model that have a <code>max_flow_rate</code>, i.e.&nbsp;Pump, Outlet and LinearResistance, put a constraint on the flow through that node. Some nodes only allow flow in one direction, like Pump, Outlet and TabulatedRatingCurve.</p>
 </section>
-<section id="fractionalflow-and-userdemand-return-flows" class="level4" data-number="3.2.2.2">
-<h4 data-number="3.2.2.2" class="anchored" data-anchor-id="fractionalflow-and-userdemand-return-flows"><span class="header-section-number">3.2.2.2</span> FractionalFlow and UserDemand return flows</h4>
-<p>Both FractionalFlow and UserDemand nodes dictate proportional relationships between flows over edges in the subnetwork. UserDemands have a return factor <span class="math inline">\(0 \le r_i \le 1, i \in U_S\)</span>, and FractionalFlow nodes have an associated fraction <span class="math inline">\(f_j\)</span> which can be updated by DiscreteControl.</p>
+<section id="userdemand-return-flows" class="level4" data-number="3.2.2.2">
+<h4 data-number="3.2.2.2" class="anchored" data-anchor-id="userdemand-return-flows"><span class="header-section-number">3.2.2.2</span> UserDemand return flows</h4>
+<p>UserDemand nodes dictate proportional relationships between flows over edges in the subnetwork. The return factor is given by <span class="math inline">\(0 \le r_i \le 1, i \in U_S\)</span>.</p>
 </section>
 </section>
 </section>
@@ -480,7 +481,7 @@ Note
 <ul>
 <li>The flows <span class="math inline">\(F \in \mathbb{R}_{\ge 0}^{n\times n}\)</span> over the edges in the allocation network;</li>
 <li>The flows <span class="math inline">\(F^\text{basin out}_{i}, F^\text{basin in}_{i} \geq 0\)</span> for all <span class="math inline">\(i \in B_S\)</span> supplied and consumed by the basins with a level demand respectively;</li>
-<li>The flows <span class="math inline">\(F^\text{buffer out}_{i}, F^\text{buffer in}_{i} \ge 0\)</span> for all <span class="math inline">\(i \in FD_S \cup FF_S\)</span> supplied and consumed by the flow buffers of nodes with a flow demand or fractional flow outneighbors.</li>
+<li>The flows <span class="math inline">\(F^\text{buffer out}_{i}, F^\text{buffer in}_{i} \ge 0\)</span> for all <span class="math inline">\(i \in FD_S \cup FF_S\)</span> supplied and consumed by the flow buffers of nodes with a flow demand.</li>
 </ul>
 </section>
 <section id="the-optimization-objective" class="level2" data-number="4.2">
@@ -577,18 +578,13 @@ F_{ij} \le (C^{UD}_S)_i, \quad \forall i \in U_S, \quad V_S^{\text{out}}(i) = \{
     r_i \cdot F_{ki}, \quad V_S^{\text{in}}(i) = \{k\}.
 \]</span></p>
 <ul>
-<li><p>Fractional flow: Let <span class="math inline">\(L_S \subset V_S\)</span> be the set of nodes in the max flow graph with fractional flow outneighbors, and <span class="math inline">\(f_j\)</span> the flow fraction associated with fractional flow node <span class="math inline">\(j \in V_S\)</span>. Then <span id="eq-fractionalflowconstraint"><span class="math display">\[
-  F_{ij} \le f_j \sum_{k\in V^\text{in}_S(i)} F_{ki} \qquad
-  \forall i \in L_S, \;
-  j \in V_S^\text{out}(i).
-\tag{3}\]</span></span></p></li>
-<li><p>Flow sign: Furthermore there are the non-negativity constraints for the flows and allocations, see <a href="../concept/allocation.html#the-optimization-variables">The optimization variables</a>.</p></li>
+<li>Flow sign: Furthermore there are the non-negativity constraints for the flows and allocations, see <a href="../concept/allocation.html#the-optimization-variables">The optimization variables</a>.</li>
 </ul>
 </section>
 <section id="example" class="level2" data-number="4.4">
 <h2 data-number="4.4" class="anchored" data-anchor-id="example"><span class="header-section-number">4.4</span> Example</h2>
 <p>The following is an example of an optimization problem for the example shown <a href="../guide/examples.html#model-with-allocation-user-demand">here</a>:</p>
-<div id="9105a7c3" class="cell" data-execution_count="1">
+<div id="ae9beb6e" class="cell" data-execution_count="1">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">using</span> <span class="bu">Ribasim</span></span>
@@ -611,41 +607,27 @@ F_{ij} \le (C^{UD}_S)_i, \quad \forall i \in U_S, \quad V_S^{\text{out}}(i) = \{
 <span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="fu">println</span>(p.allocation.allocation_models[<span class="fl">1</span>].problem)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
-<pre><code>Min F[(Basin #12, UserDemand #13)]² + F[(Basin #5, UserDemand #6)]² + F[(Basin #2, UserDemand #3)]²
+<pre><code>Min F[(Basin #5, UserDemand #6)]² + F[(Basin #2, UserDemand #3)]²
 Subject to
  source[(FlowBoundary #1, Basin #2)] : F[(FlowBoundary #1, Basin #2)] ≤ 172800
- source_user[UserDemand #3] : F[(UserDemand #3, Basin #2)] ≤ 0
  source_user[UserDemand #6] : F[(UserDemand #6, Basin #5)] ≤ 0
- source_user[UserDemand #13] : F[(UserDemand #13, Terminal #10)] ≤ 0
- fractional_flow[(TabulatedRatingCurve #7, FractionalFlow #8)] : F[(TabulatedRatingCurve #7, FractionalFlow #8)] - 0.6 F[(Basin #5, TabulatedRatingCurve #7)] ≤ 0
- fractional_flow[(TabulatedRatingCurve #7, FractionalFlow #9)] : -0.4 F[(Basin #5, TabulatedRatingCurve #7)] + F[(TabulatedRatingCurve #7, FractionalFlow #9)] ≤ 0
- flow_buffer_outflow[TabulatedRatingCurve #7] : F_flow_buffer_out[TabulatedRatingCurve #7] ≤ 0
- F[(TabulatedRatingCurve #7, FractionalFlow #8)] ≥ 0
- F[(Basin #2, LinearResistance #4)] ≥ 0
- F[(LinearResistance #4, Basin #2)] ≥ 0
- F[(UserDemand #3, Basin #2)] ≥ 0
- F[(FractionalFlow #8, Terminal #10)] ≥ 0
- F[(Basin #12, UserDemand #13)] ≥ 0
+ source_user[UserDemand #3] : F[(UserDemand #3, Basin #2)] ≤ 0
+ flow_conservation[LinearResistance #4] : -F[(LinearResistance #4, Basin #5)] + F[(Basin #5, LinearResistance #4)] + F[(Basin #2, LinearResistance #4)] - F[(LinearResistance #4, Basin #2)] = 0
+ flow_conservation[Basin #2] : F[(UserDemand #3, Basin #2)] + F[(FlowBoundary #1, Basin #2)] - F[(Basin #2, LinearResistance #4)] + F[(LinearResistance #4, Basin #2)] - F[(Basin #2, UserDemand #3)] = 0
+ flow_conservation[Terminal #8] : F[(TabulatedRatingCurve #7, Terminal #8)] = 0
+ flow_conservation[Basin #5] : F[(LinearResistance #4, Basin #5)] - F[(Basin #5, LinearResistance #4)] + F[(UserDemand #6, Basin #5)] - F[(Basin #5, UserDemand #6)] - F[(Basin #5, TabulatedRatingCurve #7)] = 0
+ flow_conservation[TabulatedRatingCurve #7] : -F[(TabulatedRatingCurve #7, Terminal #8)] + F[(Basin #5, TabulatedRatingCurve #7)] = 0
+ F[(TabulatedRatingCurve #7, Terminal #8)] ≥ 0
  F[(LinearResistance #4, Basin #5)] ≥ 0
  F[(Basin #5, LinearResistance #4)] ≥ 0
- F[(Basin #5, TabulatedRatingCurve #7)] ≥ 0
- F[(Basin #5, UserDemand #6)] ≥ 0
- F[(TabulatedRatingCurve #7, FractionalFlow #9)] ≥ 0
- F[(Basin #2, UserDemand #3)] ≥ 0
- F[(UserDemand #6, Basin #5)] ≥ 0
- F[(UserDemand #13, Terminal #10)] ≥ 0
+ F[(UserDemand #3, Basin #2)] ≥ 0
  F[(FlowBoundary #1, Basin #2)] ≥ 0
- F[(FractionalFlow #9, Basin #12)] ≥ 0
- F_flow_buffer_in[TabulatedRatingCurve #7] ≥ 0
- F_flow_buffer_out[TabulatedRatingCurve #7] ≥ 0
- flow_conservation[FractionalFlow #9] : F[(TabulatedRatingCurve #7, FractionalFlow #9)] - F[(FractionalFlow #9, Basin #12)] = 0
- flow_conservation[Basin #2] : -F[(Basin #2, LinearResistance #4)] + F[(LinearResistance #4, Basin #2)] + F[(UserDemand #3, Basin #2)] - F[(Basin #2, UserDemand #3)] + F[(FlowBoundary #1, Basin #2)] = 0
- flow_conservation[TabulatedRatingCurve #7] : -F[(TabulatedRatingCurve #7, FractionalFlow #8)] + F[(Basin #5, TabulatedRatingCurve #7)] - F[(TabulatedRatingCurve #7, FractionalFlow #9)] - F_flow_buffer_in[TabulatedRatingCurve #7] + F_flow_buffer_out[TabulatedRatingCurve #7] = 0
- flow_conservation[FractionalFlow #8] : F[(TabulatedRatingCurve #7, FractionalFlow #8)] - F[(FractionalFlow #8, Terminal #10)] = 0
- flow_conservation[LinearResistance #4] : F[(Basin #2, LinearResistance #4)] - F[(LinearResistance #4, Basin #2)] - F[(LinearResistance #4, Basin #5)] + F[(Basin #5, LinearResistance #4)] = 0
- flow_conservation[Terminal #10] : F[(FractionalFlow #8, Terminal #10)] + F[(UserDemand #13, Terminal #10)] = 0
- flow_conservation[Basin #5] : F[(LinearResistance #4, Basin #5)] - F[(Basin #5, LinearResistance #4)] - F[(Basin #5, TabulatedRatingCurve #7)] - F[(Basin #5, UserDemand #6)] + F[(UserDemand #6, Basin #5)] = 0
- flow_conservation[Basin #12] : -F[(Basin #12, UserDemand #13)] + F[(FractionalFlow #9, Basin #12)] = 0
+ F[(Basin #2, LinearResistance #4)] ≥ 0
+ F[(LinearResistance #4, Basin #2)] ≥ 0
+ F[(UserDemand #6, Basin #5)] ≥ 0
+ F[(Basin #5, UserDemand #6)] ≥ 0
+ F[(Basin #5, TabulatedRatingCurve #7)] ≥ 0
+ F[(Basin #2, UserDemand #3)] ≥ 0
 </code></pre>
 </div>
 </div>
@@ -690,18 +672,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -733,7 +704,47 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
@@ -768,7 +779,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
     });
   }
   const xrefs = window.document.querySelectorAll('a.quarto-xref');

@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.550">
+<meta name="generator" content="quarto-1.5.55">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Ribasim - Usage</title>
+<title>Usage – Ribasim</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -33,7 +33,7 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
   { counter-reset: source-line 0; }
@@ -123,7 +123,7 @@ div.csl-indent {
   }
 }</script>
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <script type="text/javascript">
@@ -171,7 +171,7 @@ window.Quarto = {
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -209,17 +209,17 @@ window.Quarto = {
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
-          <div class="quarto-navbar-tools">
+            <div class="quarto-navbar-tools">
 </div>
       </div> <!-- /container-fluid -->
     </nav>
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
         <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../reference/usage.html">Usage</a></li></ol></nav>
-        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
   </nav>
@@ -249,6 +249,9 @@ window.Quarto = {
   </div>
 </li>
         <li class="sidebar-item">
+ <span class="menu-text">reference/allocation.qmd</span>
+  </li>
+        <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../reference/python/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Python API</span></a>
@@ -262,9 +265,9 @@ window.Quarto = {
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
  <span class="menu-text">Nodes</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -337,12 +340,6 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../reference/node/fractional-flow.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">FractionalFlow</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../reference/node/terminal.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Terminal</span></a>
   </div>
@@ -351,6 +348,12 @@ window.Quarto = {
   <div class="sidebar-item-container"> 
   <a href="../reference/node/discrete-control.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">DiscreteControl</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../reference/node/continuous-control.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">ContinuousControl</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -389,10 +392,12 @@ window.Quarto = {
   <ul class="collapse">
   <li><a href="#basin---basin.arrow" id="toc-basin---basin.arrow" class="nav-link" data-scroll-target="#basin---basin.arrow"><span class="header-section-number">5.1</span> Basin - <code>basin.arrow</code></a></li>
   <li><a href="#flow---flow.arrow" id="toc-flow---flow.arrow" class="nav-link" data-scroll-target="#flow---flow.arrow"><span class="header-section-number">5.2</span> Flow - <code>flow.arrow</code></a></li>
-  <li><a href="#discretecontrol---control.arrow" id="toc-discretecontrol---control.arrow" class="nav-link" data-scroll-target="#discretecontrol---control.arrow"><span class="header-section-number">5.3</span> DiscreteControl - <code>control.arrow</code></a></li>
-  <li><a href="#allocation---allocation.arrow" id="toc-allocation---allocation.arrow" class="nav-link" data-scroll-target="#allocation---allocation.arrow"><span class="header-section-number">5.4</span> Allocation - <code>allocation.arrow</code></a></li>
-  <li><a href="#allocation-flow---allocation_flow.arrow" id="toc-allocation-flow---allocation_flow.arrow" class="nav-link" data-scroll-target="#allocation-flow---allocation_flow.arrow"><span class="header-section-number">5.5</span> Allocation flow - <code>allocation_flow.arrow</code></a></li>
-  <li><a href="#subgrid-level---subgrid_level.arrow" id="toc-subgrid-level---subgrid_level.arrow" class="nav-link" data-scroll-target="#subgrid-level---subgrid_level.arrow"><span class="header-section-number">5.6</span> Subgrid level - <code>subgrid_level.arrow</code></a></li>
+  <li><a href="#sec-state" id="toc-sec-state" class="nav-link" data-scroll-target="#sec-state"><span class="header-section-number">5.3</span> State - <code>basin_state.arrow</code></a></li>
+  <li><a href="#discretecontrol---control.arrow" id="toc-discretecontrol---control.arrow" class="nav-link" data-scroll-target="#discretecontrol---control.arrow"><span class="header-section-number">5.4</span> DiscreteControl - <code>control.arrow</code></a></li>
+  <li><a href="#allocation---allocation.arrow" id="toc-allocation---allocation.arrow" class="nav-link" data-scroll-target="#allocation---allocation.arrow"><span class="header-section-number">5.5</span> Allocation - <code>allocation.arrow</code></a></li>
+  <li><a href="#allocation-flow---allocation_flow.arrow" id="toc-allocation-flow---allocation_flow.arrow" class="nav-link" data-scroll-target="#allocation-flow---allocation_flow.arrow"><span class="header-section-number">5.6</span> Allocation flow - <code>allocation_flow.arrow</code></a></li>
+  <li><a href="#subgrid-level---subgrid_level.arrow" id="toc-subgrid-level---subgrid_level.arrow" class="nav-link" data-scroll-target="#subgrid-level---subgrid_level.arrow"><span class="header-section-number">5.7</span> Subgrid level - <code>subgrid_level.arrow</code></a></li>
+  <li><a href="#solver-statistics---solver_stats.arrow" id="toc-solver-statistics---solver_stats.arrow" class="nav-link" data-scroll-target="#solver-statistics---solver_stats.arrow"><span class="header-section-number">5.8</span> Solver statistics - <code>solver_stats.arrow</code></a></li>
   </ul></li>
   </ul>
 </nav>
@@ -436,7 +441,7 @@ window.Quarto = {
 <span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="dt">input_dir</span> <span class="op">=</span> <span class="st">"."</span>         <span class="co"># required</span></span>
 <span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="dt">results_dir</span> <span class="op">=</span> <span class="st">"results"</span> <span class="co"># required</span></span>
 <span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="dt">ribasim_version</span> <span class="op">=</span> <span class="st">"2024.8.0"</span> <span class="co"># required</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="dt">ribasim_version</span> <span class="op">=</span> <span class="st">"2024.10.0"</span> <span class="co"># required</span></span>
 <span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="co"># Specific tables can also go into Arrow files rather than the database.</span></span>
 <span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="co"># For large tables this can benefit from better compressed file sizes.</span></span>
@@ -488,31 +493,31 @@ window.Quarto = {
 <section id="results-settings" class="level2" data-number="1.3">
 <h2 data-number="1.3" class="anchored" data-anchor-id="results-settings"><span class="header-section-number">1.3</span> Results settings</h2>
 <p>The following entries can be set in the configuration in the <code>[results]</code> section.</p>
-<table class="table">
+<table class="caption-top">
 <colgroup>
 <col style="width: 50%">
 <col style="width: 17%">
 <col style="width: 32%">
 </colgroup>
 <thead>
-<tr class="header">
+<tr>
 <th>entry</th>
 <th>type</th>
 <th>description</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>compression</td>
 <td>Bool</td>
 <td>Whether to apply compression or not.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>compression_level</td>
 <td>Int</td>
 <td>Zstandard compression level. Default is 6, higher compresses more.</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>subgrid</td>
 <td>Bool</td>
 <td>Compute and output more detailed water levels.</td>
@@ -523,26 +528,26 @@ window.Quarto = {
 <section id="logging-settings" class="level2" data-number="1.4">
 <h2 data-number="1.4" class="anchored" data-anchor-id="logging-settings"><span class="header-section-number">1.4</span> Logging settings</h2>
 <p>The following entries can be set in the configuration in the <code>[logging]</code> section.</p>
-<table class="table">
+<table class="caption-top">
 <colgroup>
 <col style="width: 50%">
 <col style="width: 17%">
 <col style="width: 32%">
 </colgroup>
 <thead>
-<tr class="header">
+<tr>
 <th>entry</th>
 <th>type</th>
 <th>description</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>verbosity</td>
 <td>String</td>
 <td>Verbosity level: debug, info, warn, or error.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>timing</td>
 <td>Bool</td>
 <td>Enable timings.</td>
@@ -559,9 +564,9 @@ window.Quarto = {
 <section id="table-requirements" class="level2" data-number="2.1">
 <h2 data-number="2.1" class="anchored" data-anchor-id="table-requirements"><span class="header-section-number">2.1</span> Table requirements</h2>
 <p>Below we give details per file, in which we describe the schema of the table using a syntax like this:</p>
-<table class="table">
+<table class="caption-top">
 <thead>
-<tr class="header">
+<tr>
 <th>column</th>
 <th>type</th>
 <th>unit</th>
@@ -569,13 +574,13 @@ window.Quarto = {
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>node_id</td>
 <td>Int32</td>
 <td>-</td>
 <td>sorted</td>
 </tr>
-<tr class="even">
+<tr>
 <td>storage</td>
 <td>Float64</td>
 <td><span class="math inline">\(m^3\)</span></td>
@@ -596,36 +601,36 @@ window.Quarto = {
 <h1 data-number="3"><span class="header-section-number">3</span> Node</h1>
 <p>Node is a table that specifies the ID and type of each node of a model. The ID must be unique among all nodes, and the type must be one of the available node types listed below.</p>
 <p>Nodes are components that are connected together to form a larger system. The Basin is a central node type that stores water. The other node types influence the flow between Basins in some way. Counter intuitively, even systems you may think of as edges, such as a canal, are nodes in Ribasim. This is because edges only define direct instantaneous couplings between nodes, and never have storage of their own.</p>
-<table class="table">
+<table class="caption-top">
 <thead>
-<tr class="header">
+<tr>
 <th>column</th>
 <th>type</th>
 <th>restriction</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>node_type</td>
 <td>String</td>
 <td>sorted, known node type</td>
 </tr>
-<tr class="even">
+<tr>
 <td>node_id</td>
 <td>Int32</td>
 <td>sorted per node_type</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>geom</td>
 <td>Point</td>
 <td>(optional)</td>
 </tr>
-<tr class="even">
+<tr>
 <td>name</td>
 <td>String</td>
 <td>(optional, does not have to be unique)</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>subnetwork_id</td>
 <td>Int32</td>
 <td>(optional)</td>
@@ -641,56 +646,56 @@ window.Quarto = {
 <li>“flow”: Flows between nodes are stored on edges. The effect of the edge direction depends on the node type, Node types that have a notion of an upstream and downstream side use the incoming edge as the upstream side, and the outgoing edge as the downstream side. This means that edges should generally be drawn in the main flow direction. But for instance between two <code>LinearResistances</code> the edge direction does not affect anything, other than the sign of the flow on the edge. The sign of the flow follows the edge direction; a positive flow flows along the edge direction, a negative flow in the opposite way.</li>
 <li>“control”: The control edges define which nodes are controlled by a particular control node. Control edges should always point away from the control node. The edges between the control node and the nodes it <em>listens</em> to are <em>not</em> present in <code>Edge</code>, these are defined in <a href="../reference/node/discrete-control.html"><code>DiscreteControl / condition</code></a></li>
 </ol>
-<table class="table">
+<table class="caption-top">
 <colgroup>
 <col style="width: 25%">
 <col style="width: 53%">
 <col style="width: 20%">
 </colgroup>
 <thead>
-<tr class="header">
+<tr>
 <th>column</th>
 <th>type</th>
 <th>restriction</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>from_node_type</td>
 <td>String</td>
 <td>-</td>
 </tr>
-<tr class="even">
+<tr>
 <td>from_node_id</td>
 <td>Int32</td>
 <td>-</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>to_node_type</td>
 <td>String</td>
 <td>-</td>
 </tr>
-<tr class="even">
+<tr>
 <td>to_node_id</td>
 <td>Int32</td>
 <td>-</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>edge_type</td>
 <td>String</td>
 <td>must be “flow” or “control”</td>
 </tr>
-<tr class="even">
+<tr>
 <td>geom</td>
 <td>LineString or MultiLineString</td>
 <td>(optional)</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>name</td>
 <td>String</td>
 <td>(optional, does not have to be unique)</td>
 </tr>
-<tr class="even">
+<tr>
 <td>subnetwork_id</td>
 <td>Int32</td>
 <td>(optional, denotes source in allocation network)</td>
@@ -713,76 +718,76 @@ window.Quarto = {
 <li>The <code>balance_error</code> is the difference of all Basin inflows (<code>total_inflow</code>) and outflows (<code>total_outflow</code>), that is (<code>inflow_rate</code> + <code>precipitation</code> + <code>drainage</code> - <code>storage_increase</code>) - (<code>outflow_rate</code> + <code>evaporation</code> + <code>infiltration</code> - <code>storage_decrease</code>). It can be used to check if the numerical error when solving the water balance is sufficiently small.</li>
 <li>The <code>relative_error</code> is the fraction of the <code>balance_error</code> over the mean of the <code>total_inflow</code> and <code>total_outflow</code>.</li>
 </ul>
-<table class="table">
+<table class="caption-top">
 <thead>
-<tr class="header">
+<tr>
 <th>column</th>
 <th>type</th>
 <th>unit</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>time</td>
 <td>DateTime</td>
 <td>-</td>
 </tr>
-<tr class="even">
+<tr>
 <td>node_id</td>
 <td>Int32</td>
 <td>-</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>storage</td>
 <td>Float64</td>
 <td><span class="math inline">\(m^3\)</span></td>
 </tr>
-<tr class="even">
+<tr>
 <td>level</td>
 <td>Float64</td>
 <td><span class="math inline">\(m\)</span></td>
 </tr>
-<tr class="odd">
+<tr>
 <td>inflow_rate</td>
 <td>Float64</td>
 <td><span class="math inline">\(m^3 s^{-1}\)</span></td>
 </tr>
-<tr class="even">
+<tr>
 <td>outflow_rate</td>
 <td>Float64</td>
 <td><span class="math inline">\(m^3 s^{-1}\)</span></td>
 </tr>
-<tr class="odd">
+<tr>
 <td>storage_rate</td>
 <td>Float64</td>
 <td><span class="math inline">\(m^3 s^{-1}\)</span></td>
 </tr>
-<tr class="even">
+<tr>
 <td>precipitation</td>
 <td>Float64</td>
 <td><span class="math inline">\(m^3 s^{-1}\)</span></td>
 </tr>
-<tr class="odd">
+<tr>
 <td>evaporation</td>
 <td>Float64</td>
 <td><span class="math inline">\(m^3 s^{-1}\)</span></td>
 </tr>
-<tr class="even">
+<tr>
 <td>drainage</td>
 <td>Float64</td>
 <td><span class="math inline">\(m^3 s^{-1}\)</span></td>
 </tr>
-<tr class="odd">
+<tr>
 <td>infiltration</td>
 <td>Float64</td>
 <td><span class="math inline">\(m^3 s^{-1}\)</span></td>
 </tr>
-<tr class="even">
+<tr>
 <td>balance_error</td>
 <td>Float64</td>
 <td><span class="math inline">\(m^3 s^{-1}\)</span></td>
 </tr>
-<tr class="odd">
+<tr>
 <td>relative_error</td>
 <td>Float64</td>
 <td>-</td>
@@ -794,46 +799,46 @@ window.Quarto = {
 <section id="flow---flow.arrow" class="level2" data-number="5.2">
 <h2 data-number="5.2" class="anchored" data-anchor-id="flow---flow.arrow"><span class="header-section-number">5.2</span> Flow - <code>flow.arrow</code></h2>
 <p>The flow table contains calculated mean flows over the <code>saveat</code> intervals for every flow edge in the model. In the time column the start of the period is indicated.</p>
-<table class="table">
+<table class="caption-top">
 <thead>
-<tr class="header">
+<tr>
 <th>column</th>
 <th>type</th>
 <th>unit</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>time</td>
 <td>DateTime</td>
 <td>-</td>
 </tr>
-<tr class="even">
+<tr>
 <td>edge_id</td>
 <td>Int32</td>
 <td>-</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>from_node_type</td>
 <td>String</td>
 <td>-</td>
 </tr>
-<tr class="even">
+<tr>
 <td>from_node_id</td>
 <td>Int32</td>
 <td>-</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>to_node_type</td>
 <td>String</td>
 <td>-</td>
 </tr>
-<tr class="even">
+<tr>
 <td>to_node_id</td>
 <td>Int32</td>
 <td>-</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>flow_rate</td>
 <td>Float64</td>
 <td><span class="math inline">\(m^3 s^{-1}\)</span></td>
@@ -842,76 +847,102 @@ window.Quarto = {
 </table>
 <p>The table is sorted by time, and per time the same <code>edge_id</code> order is used, though not sorted. The <code>edge_id</code> value is the same as the <code>fid</code> written to the Edge table, and can be used to directly look up the Edge geometry. Flows from the “from” to the “to” node have a positive sign, and if the flow is reversed it will be negative.</p>
 </section>
-<section id="discretecontrol---control.arrow" class="level2" data-number="5.3">
-<h2 data-number="5.3" class="anchored" data-anchor-id="discretecontrol---control.arrow"><span class="header-section-number">5.3</span> DiscreteControl - <code>control.arrow</code></h2>
-<p>The control table contains a record of each change of control state: when it happened, which control node was involved, to which control state it changed and based on which truth state.</p>
-<table class="table">
+<section id="sec-state" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="sec-state"><span class="header-section-number">5.3</span> State - <code>basin_state.arrow</code></h2>
+<p>The Basin state table contains the water levels in each Basin at the end of the simulation.</p>
+<table class="caption-top">
 <thead>
-<tr class="header">
+<tr>
+<th>column</th>
+<th>type</th>
+<th>unit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>node_id</td>
+<td>Int32</td>
+<td>-</td>
+</tr>
+<tr>
+<td>level</td>
+<td>Float64</td>
+<td><span class="math inline">\(m\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>To use this result as the initial condition of another simulation, see the <a href="../reference/node/basin.html#sec-state">Basin / state</a> table reference.</p>
+</section>
+<section id="discretecontrol---control.arrow" class="level2" data-number="5.4">
+<h2 data-number="5.4" class="anchored" data-anchor-id="discretecontrol---control.arrow"><span class="header-section-number">5.4</span> DiscreteControl - <code>control.arrow</code></h2>
+<p>The control table contains a record of each change of control state: when it happened, which control node was involved, to which control state it changed and based on which truth state.</p>
+<table class="caption-top">
+<thead>
+<tr>
 <th>column</th>
 <th>type</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>time</td>
 <td>DateTime</td>
 </tr>
-<tr class="even">
+<tr>
 <td>control_node_id</td>
 <td>Int32</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>truth_state</td>
 <td>String</td>
 </tr>
-<tr class="even">
+<tr>
 <td>control_state</td>
 <td>String</td>
 </tr>
 </tbody>
 </table>
 </section>
-<section id="allocation---allocation.arrow" class="level2" data-number="5.4">
-<h2 data-number="5.4" class="anchored" data-anchor-id="allocation---allocation.arrow"><span class="header-section-number">5.4</span> Allocation - <code>allocation.arrow</code></h2>
+<section id="allocation---allocation.arrow" class="level2" data-number="5.5">
+<h2 data-number="5.5" class="anchored" data-anchor-id="allocation---allocation.arrow"><span class="header-section-number">5.5</span> Allocation - <code>allocation.arrow</code></h2>
 <p>The allocation table contains a record of allocation results: when it happened, for which node, in which allocation network, and what the demand, allocated flow and realized flow were. The realized values at the starting time of the simulation can be ignored.</p>
-<table class="table">
+<table class="caption-top">
 <thead>
-<tr class="header">
+<tr>
 <th>column</th>
 <th>type</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>time</td>
 <td>DateTime</td>
 </tr>
-<tr class="even">
+<tr>
 <td>subnetwork_id</td>
 <td>Int32</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>node_type</td>
 <td>String</td>
 </tr>
-<tr class="even">
+<tr>
 <td>node_id</td>
 <td>Int32</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>priority</td>
 <td>Int32</td>
 </tr>
-<tr class="even">
+<tr>
 <td>demand</td>
 <td>Float64</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>allocated</td>
 <td>Float64</td>
 </tr>
-<tr class="even">
+<tr>
 <td>realized</td>
 <td>Float64</td>
 </tr>
@@ -945,82 +976,116 @@ Note
 </div>
 </div>
 </section>
-<section id="allocation-flow---allocation_flow.arrow" class="level2" data-number="5.5">
-<h2 data-number="5.5" class="anchored" data-anchor-id="allocation-flow---allocation_flow.arrow"><span class="header-section-number">5.5</span> Allocation flow - <code>allocation_flow.arrow</code></h2>
+<section id="allocation-flow---allocation_flow.arrow" class="level2" data-number="5.6">
+<h2 data-number="5.6" class="anchored" data-anchor-id="allocation-flow---allocation_flow.arrow"><span class="header-section-number">5.6</span> Allocation flow - <code>allocation_flow.arrow</code></h2>
 <p>The allocation flow table contains results of the optimized allocation flow on every edge in the model that is part of a subnetwork, for each time an optimization problem is solved (see also <a href="../concept/allocation.html#the-high-level-algorithm">here</a>). If in the model a main network and subnetwork(s) are specified, there are 2 different types of optimization for the subnetwork: collecting its total demand per priority (for allocating flow from the main network to the subnetwork), and allocating flow within the subnetwork. The column <code>collect_demands</code> provides the distinction between these two optimization types.</p>
-<table class="table">
+<table class="caption-top">
 <thead>
-<tr class="header">
+<tr>
 <th>column</th>
 <th>type</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>time</td>
 <td>DateTime</td>
 </tr>
-<tr class="even">
+<tr>
 <td>edge_id</td>
 <td>Int32</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>from_node_type</td>
 <td>String</td>
 </tr>
-<tr class="even">
+<tr>
 <td>from_node_id</td>
 <td>Int32</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>to_node_type</td>
 <td>String</td>
 </tr>
-<tr class="even">
+<tr>
 <td>to_node_id</td>
 <td>Int32</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>subnetwork_id</td>
 <td>Int32</td>
 </tr>
-<tr class="even">
+<tr>
 <td>priority</td>
 <td>Int32</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>flow_rate</td>
 <td>Float64</td>
 </tr>
-<tr class="even">
+<tr>
 <td>collect_demands</td>
 <td>Bool</td>
 </tr>
 </tbody>
 </table>
 </section>
-<section id="subgrid-level---subgrid_level.arrow" class="level2" data-number="5.6">
-<h2 data-number="5.6" class="anchored" data-anchor-id="subgrid-level---subgrid_level.arrow"><span class="header-section-number">5.6</span> Subgrid level - <code>subgrid_level.arrow</code></h2>
+<section id="subgrid-level---subgrid_level.arrow" class="level2" data-number="5.7">
+<h2 data-number="5.7" class="anchored" data-anchor-id="subgrid-level---subgrid_level.arrow"><span class="header-section-number">5.7</span> Subgrid level - <code>subgrid_level.arrow</code></h2>
 <p>This result file is only written if the model contains a <a href="../reference/node/basin.html#subgrid">Basin / subgrid</a> table. See there for more information on the meaning of this output.</p>
-<table class="table">
+<table class="caption-top">
 <thead>
-<tr class="header">
+<tr>
 <th>column</th>
 <th>type</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>time</td>
 <td>DateTime</td>
 </tr>
-<tr class="even">
+<tr>
 <td>subgrid_id</td>
 <td>Int32</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>subgrid_level</td>
 <td>Float64</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="solver-statistics---solver_stats.arrow" class="level2" data-number="5.8">
+<h2 data-number="5.8" class="anchored" data-anchor-id="solver-statistics---solver_stats.arrow"><span class="header-section-number">5.8</span> Solver statistics - <code>solver_stats.arrow</code></h2>
+<p>This result file contains statistics about the solver, which can give an insight into how well the solver is performing over time. The data is solved by <code>saveat</code> (see <a href="#configuration-file">configuration file</a>). <code>water_balance</code> refers to the right-hand-side function of the system of differential equations solved by the Ribasim core.</p>
+<table class="caption-top">
+<thead>
+<tr>
+<th>column</th>
+<th>type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>time</td>
+<td>DateTime</td>
+</tr>
+<tr>
+<td>water_balance_calls</td>
+<td>Int</td>
+</tr>
+<tr>
+<td>linear_solves</td>
+<td>Int</td>
+</tr>
+<tr>
+<td>accepted_timesteps</td>
+<td>Int</td>
+</tr>
+<tr>
+<td>rejected_timesteps</td>
+<td>Int</td>
 </tr>
 </tbody>
 </table>
@@ -1070,18 +1135,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -1113,7 +1167,47 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
@@ -1148,7 +1242,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
     });
   }
   const xrefs = window.document.querySelectorAll('a.quarto-xref');

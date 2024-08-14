@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.550">
+<meta name="generator" content="quarto-1.5.55">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Ribasim - Validation</title>
+<title>Validation – Ribasim</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -33,7 +33,7 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
   { counter-reset: source-line 0; }
@@ -122,7 +122,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -160,17 +160,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
-          <div class="quarto-navbar-tools">
+            <div class="quarto-navbar-tools">
 </div>
       </div> <!-- /container-fluid -->
     </nav>
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
         <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../reference/validation.html">Validation</a></li></ol></nav>
-        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
   </nav>
@@ -200,6 +200,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
 </li>
         <li class="sidebar-item">
+ <span class="menu-text">reference/allocation.qmd</span>
+  </li>
+        <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../reference/python/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Python API</span></a>
@@ -213,9 +216,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
  <span class="menu-text">Nodes</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -288,12 +291,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../reference/node/fractional-flow.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">FractionalFlow</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../reference/node/terminal.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Terminal</span></a>
   </div>
@@ -302,6 +299,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <div class="sidebar-item-container"> 
   <a href="../reference/node/discrete-control.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">DiscreteControl</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../reference/node/continuous-control.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">ContinuousControl</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -353,15 +356,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="connectivity" class="level1" data-number="1">
 <h1 data-number="1"><span class="header-section-number">1</span> Connectivity</h1>
 <p>In the table below, each column shows which node types are allowed to be downstream (or ‘down-control’) of the node type at the top of the column.</p>
-<div id="cbb94295" class="cell" data-execution_count="1">
+<div id="43b22d98" class="cell" data-execution_count="1">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">using</span> <span class="bu">Ribasim</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">using</span> <span class="bu">DataFrames</span>: DataFrame</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">using</span> <span class="bu">MarkdownTables</span></span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>node_names_snake_case <span class="op">=</span> <span class="fu">Vector</span><span class="dt">{Symbol}</span>()</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>node_names_camel_case <span class="op">=</span> <span class="fu">Vector</span><span class="dt">{Symbol}</span>()</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>node_names_snake_case <span class="op">=</span> <span class="dt">Symbol</span>[]</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>node_names_camel_case <span class="op">=</span> <span class="dt">Symbol</span>[]</span>
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (node_name, node_type) <span class="kw">in</span> <span class="fu">zip</span>(<span class="fu">fieldnames</span>(Ribasim.Parameters), <span class="fu">fieldtypes</span>(Ribasim.Parameters))</span>
 <span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> node_type <span class="op">&lt;:</span><span class="dt"> Ribasim.AbstractParameterNode</span></span>
 <span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>        <span class="fu">push!</span>(node_names_snake_case, node_name)</span>
@@ -385,39 +388,39 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="fu">markdown_table</span>(df)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display cell-output-markdown" data-execution_count="2">
-<table class="table table-sm table-striped small">
+<table class="caption-top">
 <colgroup>
 <col style="width: 10%">
 <col style="width: 2%">
 <col style="width: 7%">
 <col style="width: 8%">
-<col style="width: 10%">
-<col style="width: 7%">
+<col style="width: 9%">
 <col style="width: 6%">
 <col style="width: 6%">
 <col style="width: 2%">
 <col style="width: 3%">
 <col style="width: 4%">
 <col style="width: 7%">
+<col style="width: 8%">
 <col style="width: 5%">
 <col style="width: 5%">
 <col style="width: 5%">
 <col style="width: 5%">
 </colgroup>
 <thead>
-<tr class="header">
+<tr>
 <th>downstream</th>
 <th>basin</th>
 <th>linear_resistance</th>
 <th>manning_resistance</th>
 <th>tabulated_rating_curve</th>
-<th>fractional_flow</th>
 <th>level_boundary</th>
 <th>flow_boundary</th>
 <th>pump</th>
 <th>outlet</th>
 <th>terminal</th>
 <th>discrete_control</th>
+<th>continuous_control</th>
 <th>pid_control</th>
 <th>user_demand</th>
 <th>level_demand</th>
@@ -425,17 +428,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td><code>basin</code></td>
 <td>x</td>
 <td>✓</td>
 <td>✓</td>
 <td>✓</td>
-<td>✓</td>
 <td>x</td>
 <td>✓</td>
 <td>✓</td>
 <td>✓</td>
+<td>x</td>
 <td>x</td>
 <td>x</td>
 <td>x</td>
@@ -443,25 +446,25 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td>✓</td>
 <td>x</td>
 </tr>
-<tr class="even">
+<tr>
 <td><code>linear_resistance</code></td>
 <td>✓</td>
 <td>x</td>
 <td>x</td>
 <td>x</td>
-<td>x</td>
 <td>✓</td>
 <td>x</td>
 <td>x</td>
 <td>x</td>
 <td>x</td>
 <td>✓</td>
+<td>x</td>
 <td>x</td>
 <td>x</td>
 <td>x</td>
 <td>✓</td>
 </tr>
-<tr class="odd">
+<tr>
 <td><code>manning_resistance</code></td>
 <td>✓</td>
 <td>x</td>
@@ -472,60 +475,42 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td>x</td>
 <td>x</td>
 <td>x</td>
-<td>x</td>
 <td>✓</td>
+<td>x</td>
 <td>x</td>
 <td>x</td>
 <td>x</td>
 <td>✓</td>
 </tr>
-<tr class="even">
+<tr>
 <td><code>tabulated_rating_curve</code></td>
 <td>✓</td>
 <td>x</td>
 <td>x</td>
 <td>x</td>
-<td>x</td>
 <td>✓</td>
 <td>x</td>
 <td>x</td>
 <td>x</td>
 <td>x</td>
 <td>✓</td>
+<td>x</td>
 <td>x</td>
 <td>x</td>
 <td>x</td>
 <td>✓</td>
 </tr>
-<tr class="odd">
-<td><code>fractional_flow</code></td>
-<td>x</td>
-<td>x</td>
-<td>x</td>
-<td>✓</td>
-<td>x</td>
-<td>x</td>
-<td>✓</td>
-<td>✓</td>
-<td>✓</td>
-<td>x</td>
-<td>✓</td>
-<td>x</td>
-<td>✓</td>
-<td>x</td>
-<td>x</td>
-</tr>
-<tr class="even">
+<tr>
 <td><code>level_boundary</code></td>
 <td>x</td>
 <td>✓</td>
 <td>x</td>
 <td>✓</td>
-<td>✓</td>
 <td>x</td>
 <td>✓</td>
 <td>✓</td>
 <td>✓</td>
+<td>x</td>
 <td>x</td>
 <td>x</td>
 <td>x</td>
@@ -533,7 +518,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td>x</td>
 <td>x</td>
 </tr>
-<tr class="odd">
+<tr>
 <td><code>flow_boundary</code></td>
 <td>x</td>
 <td>x</td>
@@ -551,53 +536,53 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td>x</td>
 <td>x</td>
 </tr>
-<tr class="even">
+<tr>
 <td><code>pump</code></td>
 <td>✓</td>
 <td>x</td>
 <td>x</td>
 <td>x</td>
-<td>x</td>
 <td>✓</td>
 <td>x</td>
 <td>x</td>
 <td>x</td>
 <td>x</td>
+<td>✓</td>
 <td>✓</td>
 <td>✓</td>
 <td>x</td>
 <td>x</td>
 <td>✓</td>
 </tr>
-<tr class="odd">
+<tr>
 <td><code>outlet</code></td>
 <td>✓</td>
 <td>x</td>
 <td>x</td>
 <td>x</td>
-<td>x</td>
 <td>✓</td>
 <td>x</td>
 <td>x</td>
 <td>x</td>
 <td>x</td>
+<td>✓</td>
 <td>✓</td>
 <td>✓</td>
 <td>x</td>
 <td>x</td>
 <td>✓</td>
 </tr>
-<tr class="even">
+<tr>
 <td><code>terminal</code></td>
 <td>x</td>
 <td>x</td>
 <td>x</td>
 <td>✓</td>
-<td>✓</td>
 <td>x</td>
 <td>✓</td>
 <td>✓</td>
 <td>✓</td>
+<td>x</td>
 <td>x</td>
 <td>x</td>
 <td>x</td>
@@ -605,7 +590,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td>x</td>
 <td>x</td>
 </tr>
-<tr class="odd">
+<tr>
 <td><code>discrete_control</code></td>
 <td>x</td>
 <td>x</td>
@@ -623,9 +608,26 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td>x</td>
 <td>x</td>
 </tr>
-<tr class="even">
-<td><code>pid_control</code></td>
+<tr>
+<td><code>continuous_control</code></td>
 <td>x</td>
+<td>x</td>
+<td>x</td>
+<td>x</td>
+<td>x</td>
+<td>x</td>
+<td>x</td>
+<td>x</td>
+<td>x</td>
+<td>x</td>
+<td>x</td>
+<td>x</td>
+<td>x</td>
+<td>x</td>
+<td>x</td>
+</tr>
+<tr>
+<td><code>pid_control</code></td>
 <td>x</td>
 <td>x</td>
 <td>x</td>
@@ -640,8 +642,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td>x</td>
 <td>x</td>
 <td>x</td>
+<td>x</td>
 </tr>
-<tr class="odd">
+<tr>
 <td><code>user_demand</code></td>
 <td>✓</td>
 <td>x</td>
@@ -659,7 +662,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td>x</td>
 <td>x</td>
 </tr>
-<tr class="even">
+<tr>
 <td><code>level_demand</code></td>
 <td>x</td>
 <td>x</td>
@@ -677,7 +680,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td>x</td>
 <td>x</td>
 </tr>
-<tr class="odd">
+<tr>
 <td><code>flow_demand</code></td>
 <td>x</td>
 <td>x</td>
@@ -703,7 +706,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="neighbor-amounts" class="level1" data-number="2">
 <h1 data-number="2"><span class="header-section-number">2</span> Neighbor amounts</h1>
 <p>The table below shows for each node type between which bounds the amount of in- and outneighbors must be, for both flow and control edges.</p>
-<div id="e4c2200d" class="cell" data-execution_count="2">
+<div id="487f3538" class="cell" data-execution_count="2">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>flow_in_min <span class="op">=</span> <span class="fu">Vector</span><span class="dt">{String}</span>()</span>
@@ -750,7 +753,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb2-42"><a href="#cb2-42" aria-hidden="true" tabindex="-1"></a><span class="fu">markdown_table</span>(df)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display cell-output-markdown" data-execution_count="3">
-<table class="table table-sm table-striped small">
+<table class="caption-top">
 <colgroup>
 <col style="width: 17%">
 <col style="width: 8%">
@@ -763,7 +766,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <col style="width: 11%">
 </colgroup>
 <thead>
-<tr class="header">
+<tr>
 <th>node_type</th>
 <th>flow_in_min</th>
 <th>flow_in_max</th>
@@ -776,7 +779,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td><code>basin</code></td>
 <td>0</td>
 <td>∞</td>
@@ -787,7 +790,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td>0</td>
 <td>0</td>
 </tr>
-<tr class="even">
+<tr>
 <td><code>linear_resistance</code></td>
 <td>1</td>
 <td>1</td>
@@ -798,7 +801,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td>0</td>
 <td>0</td>
 </tr>
-<tr class="odd">
+<tr>
 <td><code>manning_resistance</code></td>
 <td>1</td>
 <td>1</td>
@@ -809,7 +812,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td>0</td>
 <td>0</td>
 </tr>
-<tr class="even">
+<tr>
 <td><code>tabulated_rating_curve</code></td>
 <td>1</td>
 <td>1</td>
@@ -820,18 +823,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td>0</td>
 <td>0</td>
 </tr>
-<tr class="odd">
-<td><code>fractional_flow</code></td>
-<td>1</td>
-<td>1</td>
-<td>1</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr class="even">
+<tr>
 <td><code>level_boundary</code></td>
 <td>0</td>
 <td>∞</td>
@@ -842,7 +834,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td>0</td>
 <td>0</td>
 </tr>
-<tr class="odd">
+<tr>
 <td><code>flow_boundary</code></td>
 <td>0</td>
 <td>0</td>
@@ -853,7 +845,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td>0</td>
 <td>0</td>
 </tr>
-<tr class="even">
+<tr>
 <td><code>pump</code></td>
 <td>1</td>
 <td>1</td>
@@ -864,18 +856,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td>0</td>
 <td>0</td>
 </tr>
-<tr class="odd">
+<tr>
 <td><code>outlet</code></td>
 <td>1</td>
 <td>1</td>
 <td>1</td>
-<td>∞</td>
+<td>1</td>
 <td>0</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
 </tr>
-<tr class="even">
+<tr>
 <td><code>terminal</code></td>
 <td>1</td>
 <td>∞</td>
@@ -886,7 +878,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td>0</td>
 <td>0</td>
 </tr>
-<tr class="odd">
+<tr>
 <td><code>discrete_control</code></td>
 <td>0</td>
 <td>0</td>
@@ -897,7 +889,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td>1</td>
 <td>∞</td>
 </tr>
-<tr class="even">
+<tr>
+<td><code>continuous_control</code></td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>∞</td>
+</tr>
+<tr>
 <td><code>pid_control</code></td>
 <td>0</td>
 <td>0</td>
@@ -908,7 +911,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td>1</td>
 <td>1</td>
 </tr>
-<tr class="odd">
+<tr>
 <td><code>user_demand</code></td>
 <td>1</td>
 <td>1</td>
@@ -919,7 +922,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td>0</td>
 <td>0</td>
 </tr>
-<tr class="even">
+<tr>
 <td><code>level_demand</code></td>
 <td>0</td>
 <td>0</td>
@@ -930,7 +933,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td>1</td>
 <td>∞</td>
 </tr>
-<tr class="odd">
+<tr>
 <td><code>flow_demand</code></td>
 <td>0</td>
 <td>0</td>
@@ -985,18 +988,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -1028,7 +1020,47 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
@@ -1063,7 +1095,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
     });
   }
   const xrefs = window.document.querySelectorAll('a.quarto-xref');
