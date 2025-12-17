@@ -953,3 +953,16 @@ class Model(FileModel):
             _add_cf_attributes(ds, timeseries_id="node_id", realization="substance")
             ds["concentration"].attrs.update({"units": "g m-3"})
             ds.to_netcdf(results_dir / "concentration.nc")
+
+    # upstream/downstream searches
+    def upstream_basin_id(self, node_id: int) -> int:
+        print(f"will return upstream_basin_id of node {node_id}")
+        return 0
+
+    def downstream_basin_id(self, node_id: int) -> int:
+        print(f"will return downstream_basin_id of node {node_id}")
+        return 0
+
+    def connector_node_id(self, link_id: int) -> int:
+        print(f"will return connector node associated with {link_id}")
+        return 0
